@@ -31,7 +31,7 @@ const BlogSidebar = () => {
                 <TitleComponent type='h4' className="text-black">Popular Tags</TitleComponent>
                 <div className="flex items-center xl:gap-x-2.5 xl:gap-y-4 gap-x-1.5 gap-y-2.5 flex-wrap mt-6">
                     {tagsData.map((item, index) => (
-                        <Link key={index} to="#" className={`bg-grey100 py-1 px-3 lg:text-lg sm:text-base text-sm font-medium ${index === 1 ? "bg-primary text-white" : "text-bodyColor duration-300 hover:bg-primary hover:text-white"}`}>{item}</Link>
+                        <Link key={index} to="#" className={`bg-grey100 py-1 px-3 xl:text-lg sm:text-base text-sm font-medium ${index === 1 ? "bg-primary text-white" : "text-bodyColor duration-300 hover:bg-primary hover:text-white"}`}>{item}</Link>
                     ))}
                 </div>
             </div>

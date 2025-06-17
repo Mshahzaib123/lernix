@@ -23,6 +23,7 @@ import BlogWithoutSidebar from './pages/blog-without-sidebar';
 import BlogWithSidebar from './pages/blog-with-sidebar';
 import ContactUs from './pages/contact';
 import Footer2 from './components/footer/footer2';
+import CategoryPage from './pages/category-page';
 
 function App() {
   const location = useLocation();
@@ -69,6 +70,7 @@ function App() {
             <Route path="/blog-detail/:id" element={<BlogDetail />} />
             <Route path="/blog-with-sidebar" element={<BlogWithSidebar />} />
             <Route path="/blog-without-sidebar" element={<BlogWithoutSidebar />} />
+            <Route path="/category" element={<CategoryPage />} />
             <Route path='/contact-us' element={<ContactUs />} />
           </Routes>
           {footer}

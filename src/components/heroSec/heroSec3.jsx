@@ -52,14 +52,12 @@ const HeroSec3 = () => {
             </div>
             <img className='absolute right-0 bottom-0 2xl:max-w-full lg:max-w-[600px]' src={shape1} alt="" />
             <img className='absolute right-0 bottom-0 2xl:max-w-full lg:max-w-[500px]' src={shape2} alt="" />
-            <div className="lg:block hidden">
-                <img className="absolute top-[87px] left-24 2xl:max-w-full max-w-16" src={shape15} alt="" />
-                <div className="absolute 2xl:top-14 2xl:right-48 top-24 right-32 2xl:animate-moveBounce w-2.5 h-2.5 bg-gradient rounded-full" />
-                <div className="absolute top-[205px] right-24 w-2 h-2 rounded-full bg-primary animate-moveBg " />
-                <div className="absolute left-16 2xl:bottom-[340px] xl:bottom-[300px] bottom-[340px] w-2.5 h-2.5 rounded-full bg-gradient animate-moveBg" />
-                <div className="absolute left-40 2xl:bottom-56 bottom-20 w-2 h-2 rounded-full bg-primary 2xl:animate-moveBounce" />
-                <img className="absolute 2xl:top-[134px] 2xl:left-[643px] top-[120px] left-[340px] 2xl:max-w-full max-w-24 animate-rotateMe2" src={shap24} alt="" />
-            </div>
+            <img className="absolute top-[87px] left-24 2xl:max-w-full max-w-16 lg:block hidden" src={shape15} alt="" />
+            <div className="absolute 2xl:top-14 2xl:right-48 top-24 right-32 2xl:animate-moveBounce w-2.5 h-2.5 bg-gradient rounded-full lg:block hidden" />
+            <div className="absolute top-[205px] right-24 w-2 h-2 rounded-full bg-primary animate-moveBg lg:block hidden" />
+            <div className="absolute left-16 2xl:bottom-[340px] xl:bottom-[300px] bottom-[340px] w-2.5 h-2.5 rounded-full bg-gradient animate-moveBg lg:block hidden" />
+            <div className="absolute left-40 2xl:bottom-56 bottom-20 w-2 h-2 rounded-full bg-primary 2xl:animate-moveBounce lg:block hidden" />
+            <img className="absolute 2xl:top-[134px] 2xl:left-[643px] top-[120px] left-[340px] 2xl:max-w-full max-w-24 animate-rotateMe2 lg:block hidden" src={shap24} alt="" />
         </section>
     )
 }

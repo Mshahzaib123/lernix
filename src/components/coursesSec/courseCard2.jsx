@@ -4,7 +4,7 @@ import TitleComponent from '../titleComponent/titleComponent';
 
 const CourseCard2 = ({ data }) => {
     return (
-        <div className="shadow-boxShadow rounded-xl overflow-hidden border-b-[5px] border-solid border-transparent duration-300 group hover:border-primary hover:shadow-boxShadow2 hover:-translate-y-2.5">
+        <div className="shadow-boxShadow rounded-xl overflow-hidden border-b-5 border-solid border-transparent duration-300 group hover:border-primary hover:shadow-boxShadow2 hover:-translate-y-2.5">
             <div className="relative overflow-hidden duration-300 group/image">
                 <Link to={`/courses-detail/${data.id}`} className="block">
                     <img className="object-cover w-full duration-300 group-hover/image:scale-110" src={data.img} alt="" />

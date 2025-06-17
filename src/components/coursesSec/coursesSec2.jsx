@@ -38,7 +38,7 @@ const CoursesSec2 = () => {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-bodyColor border-none bg-transparent lg:text-lg text-base font-bold duration-300 hover:text-primary ${activeTab === tab ? 'text-primary' : ''}`}>
+                                className={`border-none bg-transparent text-bodyColor lg:text-lg text-base font-bold duration-300 hover:text-primary ${activeTab === tab ? 'text-primary' : ''}`}>
                                 {tab}
                             </button>
                         ))}

@@ -26,7 +26,8 @@ const HeroSec2 = () => {
                             highlightedText="Skills"
                             headingColor="text-white"
                             headingLevel='h1'
-                            className='text-whiteShade' />
+                            className='text-whiteShade'
+                        />
                         <TitleComponent size='extra-large-medium' className='text-whiteShade lg:mt-6 lg:mb-9 my-6'>Embark on a Journey of Digital Discovery: Expert-Led Courses Designed to Equip</TitleComponent>
 
                         <div className="flex items-center md:gap-10 gap-6 md:mt-9 mt-6">
@@ -53,7 +54,7 @@ const HeroSec2 = () => {
                             <div className="inline-flex items-center justify-center 2xs:gap-5 gap-3.5 rounded-xl bg-whiteShade xl:py-[30px] xl:px-10 sm:py-5 sm:px-[30px] p-3.5 w-max">
                                 <ul className="flex items-center">
                                     {userProfileData.slice(5, 9).map((item, index) => (
-                                        <li className="first-ml-0 -ml-2.5 duration-300 hover:z-[4] hover:-translate-y-1.5" key={index}>
+                                        <li key={index} className="first-ml-0 -ml-2.5 duration-300 hover:z-[4] hover:-translate-y-1.5">
                                             <img className="relative sm:w-[52px] sm:h-[52px] w-11 h-11 rounded-full object-cover border-2 border-solid border-whiteShade z-[2]" src={item.img} alt={item.text} />
                                         </li>
                                     ))}

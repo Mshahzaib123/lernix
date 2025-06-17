@@ -1,4 +1,3 @@
-
 const FormInput = (props) => {
     return (
         <input type={props.type}

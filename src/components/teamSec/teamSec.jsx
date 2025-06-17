@@ -17,7 +17,7 @@ const TeamSec = () => {
     return (
         <section className="lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
             <div className="container">
-                <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-center items-center ">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 justify-center items-center">
                     <div className="lg:col-span-1 col-span-full">
                         <SectionTitle
                             subtitle="Team Members"

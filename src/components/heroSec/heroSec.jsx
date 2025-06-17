@@ -26,7 +26,12 @@ const HeroSec = () => {
             <div className="container">
                 <div className="flex lg:flex-row flex-col gap-y-9">
                     <div className="lg:w-1/2 xl:pr-20 lg:pr-10 lg:mt-14 mt-0">
-                        <SectionTitle subtitle="Online Education Website" title="Empower Your Future, Learn Digital" highlightedText="Skills" headingLevel='h1' />
+                        <SectionTitle
+                            subtitle="Online Education Website"
+                            title="Empower Your Future, Learn Digital"
+                            highlightedText="Skills"
+                            headingLevel='h1'
+                        />
                         <TitleComponent size='extra-large-medium' className='lg:mt-6 lg:mb-9 my-6 text-bodyColor'>Embark on a Journey of Digital Discovery: Expert-Led Courses Designed to Equip</TitleComponent>
                         <div className="flex items-center md:gap-10 gap-6">
                             <ThemeButton variant="split" theme="secondary" text="Enroll Now" onClick={handleClick} />
@@ -37,7 +42,7 @@ const HeroSec = () => {
                     </div>
                     <div className="relative lg:w-1/2">
                         <img className="relative z-[2]" src={heroImg} alt="Hero" />
-                        <div className="inline-block md:absolute relative z-[2] md:top-72 top-0 right-0 md:mb-0 mb-3.5 p-3.5 rounded-lg bg-whiteShade shadow-boxShadow2 duration-300 hover:-translate-y-2.5">
+                        <div className="inline-block md:absolute relative z-[2] md:top-72 top-0 right-0 md:mb-0 mb-3.5 p-3.5 rounded-lg bg-whiteShade shadow-boxShadow2 duration-300 group hover:-translate-y-2.5">
                             <ul className="flex items-center gap-x-4">
                                 <li className="flex items-center gap-1">
                                     <img src={udemyLogo} alt="Udemy LOGO" />
@@ -56,13 +61,13 @@ const HeroSec = () => {
                             <TitleComponent type="h4" className='text-black'>10K+</TitleComponent>
                             <ul className="flex justify-center items-center flex-wrap mt-3">
                                 {userProfileData.slice(0, 5).map((item, index) => (
-                                    <li className="first:ml-0 ml-[-10px] duration-300 group hover:-translate-y-1.5 hover:z-[4]" key={index}>
+                                    <li key={index} className="first:ml-0 -ml-2.5 duration-300 group hover:-translate-y-1.5 hover:z-[4]">
                                         <img className="relative z-[2] w-14 h-14 rounded-full border-2 border-solid border-whiteShade object-cover" src={item.img} alt={item.text} />
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="flex justify-between items-center xl:gap-x-4 gap-x-2.5 md:absolute relative z-[2] right-0 md:bottom-4 bottom-0 md:p-5 p-4 bg-white shadow-boxShadow2 rounded-lg after:content-[''] after:absolute after:top-0 after:left-0 after:-z-[1] after:w-1 after:h-full after:bg-primary after:rounded-tl-lg after:rounded-bl-lg after:duration-500 duration-500 group hover:-translate-y-2.5 hover:after:w-full hover:after:rounded-lg">
+                        <div className="md:absolute relative z-[2] right-0 md:bottom-4 bottom-0 flex justify-between items-center xl:gap-x-4 gap-x-2.5 md:p-5 p-4 bg-white shadow-boxShadow2 rounded-lg after:content-[''] after:absolute after:top-0 after:left-0 after:-z-[1] after:w-1 after:h-full after:bg-primary after:rounded-tl-lg after:rounded-bl-lg after:duration-500 duration-500 group hover:-translate-y-2.5 hover:after:w-full hover:after:rounded-lg">
                             <div>
                                 <TitleComponent size='extra-large-medium' className='text-lg text-black duration-300 group-hover:text-white'>Chat with a mentor</TitleComponent>
                                 <TitleComponent size='base-medium' className='text-sm text-bodyColor duration-300 group-hover:text-white'>Find your mentor here</TitleComponent>

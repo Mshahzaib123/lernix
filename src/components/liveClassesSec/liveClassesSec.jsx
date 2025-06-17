@@ -10,7 +10,7 @@ import shape11 from '../../assets/shape11.svg';
 
 const LiveClassesSec = () => {
     return (
-        <section className="live_class relative bg-lightPink200 lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
+        <section className="relative bg-lightPink200 lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
             <div className="container">
                 <div className="md:mb-12 mb-7">
                     <SectionTitle
@@ -28,23 +28,29 @@ const LiveClassesSec = () => {
                         <TitleComponent size='small' className='text-bodyColor xl:text-base md:text-sm text-xs'>01:30:08</TitleComponent>
                     </div>
                     <div className="absolute left-1/2 -translate-x-1/2 xl:bottom-12 lg:bottom-8 md:bottom-5 bottom-2.5">
-                        <div className="flex items-center md:gap-x-4 gap-x-2">
-                            <Link to="#" className="flex items-center justify-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-11 md:h-11 w-9 h-9 bg-white rounded-full duration-300 hover:-translate-y-2.5">
-                                <SpeakerSimpleX className='xl:text-2xl lg:text-xl md:text-lg text-base text-black' weight='fill' />
-                            </Link>
-                            <Link to="#" className="flex items-center justify-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-11 md:h-11 w-9 h-9 rounded-full bg-lightRed100 duration-300 group hover:bg-lightPink100 hover:-translate-y-2.5 ">
-                                <Phone className='xl:text-2xl lg:text-xl md:text-lg text-base text-white duration-300 group-hover:text-lightRed100' weight='fill' />
-                            </Link>
-                            <Link to="#" className="flex items-center justify-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-11 md:h-11 w-9 h-9 rounded-full bg-secondary duration-300 group hover:bg-lightPink100 hover:-translate-y-2.5">
-                                <VideoCamera className='xl:text-2xl lg:text-xl md:text-lg text-base text-white duration-300 group-hover:text-secondary' weight='fill' />
-                            </Link>
-                        </div>
+                        <ul className="flex items-center md:gap-x-4 gap-x-2">
+                            <li>
+                                <Link to="#" className="flex items-center justify-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-11 md:h-11 w-9 h-9 bg-white rounded-full duration-300 hover:-translate-y-2.5">
+                                    <SpeakerSimpleX className='text-black xl:text-2xl lg:text-xl md:text-lg text-base' weight='fill' />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#" className="flex items-center justify-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-11 md:h-11 w-9 h-9 rounded-full bg-lightRed100 duration-300 group hover:bg-lightPink100 hover:-translate-y-2.5 ">
+                                    <Phone className='text-white xl:text-2xl lg:text-xl md:text-lg text-base duration-300 group-hover:text-lightRed100' weight='fill' />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="#" className="flex items-center justify-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-11 md:h-11 w-9 h-9 rounded-full bg-secondary duration-300 group hover:bg-lightPink100 hover:-translate-y-2.5">
+                                    <VideoCamera className='text-white xl:text-2xl lg:text-xl md:text-lg text-base duration-300 group-hover:text-secondary' weight='fill' />
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
-                    <img className="absolute xl:bottom-12 xl:left-12 lg:bottom-8 lg:left-8 md:bottom-5 md:left-5 bottom-2.5 left-2.5 xl:w-52 xl:h-52 lg:w-40 lg:h-40 md:w-24 md:h-24 w-14 h-14 xl:rounded-lg rounded object-cover xl:border-5 border-4 border-solid border-white" src={learning2} alt="" />
+                    <img className="absolute xl:bottom-12 xl:left-12 lg:bottom-8 lg:left-8 md:bottom-5 md:left-5 bottom-2.5 left-2.5 xl:w-52 xl:h-52 lg:w-40 lg:h-40 md:w-24 md:h-24 w-14 h-14 xl:rounded-lg rounded xl:border-5 border-4 border-solid border-white object-cover" src={learning2} alt="" />
                 </div>
             </div>
             <img className="absolute xl:top-28 xl:left-16 top-16 left-10 lg:block hidden" src={shape10} alt="" />
-            <img className="absolute xl:right-16 xl:bottom-48 right-14 bottom-10 animate-rotateMe lg:block hidden" src={shape11} alt="" />
+            <img className="absolute xl:bottom-48 xl:right-16  bottom-10 right-14 animate-rotateMe lg:block hidden" src={shape11} alt="" />
         </section>
     )
 }

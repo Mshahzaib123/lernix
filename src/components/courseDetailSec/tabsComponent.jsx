@@ -74,9 +74,9 @@ const TabsComponent = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="requirement_otr">
-                        <TitleComponent type='h6' className="text-black !font-bold">Requirements</TitleComponent>
-                        <div className="flex md:justify-between justify-center items-center xl:gap-11 gap-3 flex-wrap mt-8">
+                    <div>
+                        <TitleComponent type='h6' className="text-black !font-semibold">Requirements</TitleComponent>
+                        <div className="flex md:justify-start justify-center items-center xl:gap-5 gap-3 flex-wrap mt-8">
                             <button className="flex items-center gap-3 bg-whiteShade shadow-boxShadow rounded cursor-pointer xl:py-4 py-3 2xl:px-9 xl:px-8 lg:px-4 px-8 duration-300 group hover:-translate-y-2.5">
                                 <img className="max-w-6 object-contain" src={computerSvg} alt="" />
                                 <TitleComponent size='small-medium' className="text-black lg:text-base">Computer/Mobile</TitleComponent>
@@ -96,13 +96,13 @@ const TabsComponent = () => {
                     <div className="grid md:gap-6 gap-5">
                         {courseContentData.map((item, index) => (
                             <div key={index}>
-                                <button className={`flex justify-between items-center w-full rounded xl:p-7 md:p-5 py-3.5 px-5 ${openAccordion === index ? "bg-secondary" : "bg-grey100"} duration-300`} onClick={() => toggleCollapse(index)}>
+                                <button className={`flex justify-between items-center w-full rounded xl:p-7 md:p-5 py-3.5 px-5 ${openAccordion === index ? "bg-secondary" : "bg-grey100"} duration-500`} onClick={() => toggleCollapse(index)}>
                                     <div className='flex justify-start items-center gap-2'>
-                                        <CaretDown className={`${openAccordion === index ? "text-whiteShade rotate-180" : "text-black"} duration-300`} weight='bold' size={18} />
-                                        <h6 className={`${openAccordion === index ? "text-whiteShade" : "text-black"} text-left md:text-lg sm:text-base text-sm font-semibold`}>{item.heading}</h6>
+                                        <CaretDown className={`${openAccordion === index ? "text-whiteShade rotate-180" : "text-black"} duration-500`} weight='bold' size={18} />
+                                        <h6 className={`${openAccordion === index ? "text-whiteShade" : "text-black"} duration-500 text-left md:text-lg sm:text-base text-sm font-semibold`}>{item.heading}</h6>
                                     </div>
                                     <div className="sm:block hidden">
-                                        <TitleComponent size='small-medium' className={`${openAccordion === index ? "text-whiteShade" : "text-bodyColor"} md:text-base`}> {`${item.noOfLec} Lectures, ${item.runTime}`}</TitleComponent>
+                                        <TitleComponent size='small-medium' className={`${openAccordion === index ? "text-whiteShade" : "text-bodyColor"} duration-500 md:text-base`}> {`${item.noOfLec} Lectures, ${item.runTime}`}</TitleComponent>
                                     </div>
                                 </button>
                                 <div
@@ -167,42 +167,53 @@ const TabsComponent = () => {
                                     <TitleComponent size='small-medium' className="text-bodyColor md:text-base">4.9 Average Rating</TitleComponent>
                                 </li>
                             </ul>
-                            <div className="flex items-center md:gap-8 gap-5 mt-6">
-                                <Link to="#" className="group">
-                                    <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={facebookSvg} alt="" />
-                                </Link>
-                                <Link to="#" className="group">
-                                    <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={linkedInSvg} alt="" />
-                                </Link>
-                                <Link to="#" className="group">
-                                    <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={youtubeSvg} alt="" />
-                                </Link>
-                                <Link to="#" className="group">
-                                    <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={instagram2Svg} alt="" />
-                                </Link>
-                                <Link to="#" className="group">
-                                    <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={twitterSvg} alt="" />
-                                </Link>
-                            </div>
+                            <ul className="flex items-center md:gap-8 gap-5 mt-6">
+                                <li>
+                                    <Link to="#" className="group">
+                                        <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={facebookSvg} alt="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="#" className="group">
+                                        <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={linkedInSvg} alt="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="#" className="group">
+                                        <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={youtubeSvg} alt="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="#" className="group">
+                                        <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={instagram2Svg} alt="" />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="#" className="group">
+                                        <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={twitterSvg} alt="" />
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <TitleComponent size='small-medium' className="md:mt-8 mt-5 text-bodyColor md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use Link passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend.</TitleComponent>
                 </div>
-                <div className={`reviews_info ${toggle === menuData[3] ? "block" : "hidden"}`}>
+                <div className={`${toggle === menuData[3] ? "block" : "hidden"}`}>
                     <div className="flex justify-evenly items-center md:flex-row flex-col gap-3">
                         <ul className="lg:w-3/4 flex flex-col xl:gap-5 gap-3">
                             {ratings.map((item, index) => (
                                 <li key={index} className="flex sm:items-center items-start sm:gap-4 gap-1.5 sm:flex-row flex-col">
-                                    <div className="flex items-center gap-0.4">
+                                    <ul className="flex items-center gap-0.4">
                                         {[...Array(5)].map((_, i) => (
-                                            <Star
-                                                key={i}
-                                                size={20}
-                                                weight="fill"
-                                                className={i < item.stars ? "text-yellow" : "text-whiteShade200"}
-                                            />
+                                            <li key={i}>
+                                                <Star
+                                                    size={20}
+                                                    weight="fill"
+                                                    className={i < item.stars ? "text-yellow" : "text-whiteShade200"}
+                                                />
+                                            </li>
                                         ))}
-                                    </div>
+                                    </ul>
                                     <div className="flex items-center gap-2 md:justify-start justify-between w-full">
                                         <div className="relative">
                                             <div className="2xl:w-[420px] xl:w-[350px] lg:w-[320px] md:w-[300px] w-[250px] h-2 bg-grey100" />
@@ -215,11 +226,13 @@ const TabsComponent = () => {
                         </ul>
                         <div className="lg:w-1/4 bg-white shadow-boxShadow rounded-lg flex items-center flex-col text-center xl:py-12 xl:px-10 lg:p-5 p-8 2xs:w-auto w-full">
                             <h3 className="text-black md:text-[44px] text-3xl font-lexend leading-normal font-bold">4.9</h3>
-                            <div className="flex items-center gap-0.5 mt-2.5 my-2">
+                            <ul className="flex items-center gap-0.5 mt-2.5 my-2">
                                 {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className="text-yellow" weight='fill' size={20} />
+                                    <li key={i}>
+                                        <Star className="text-yellow" weight='fill' size={20} />
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                             <TitleComponent size='base-medium' className="text-bodyColor">(2 Review)</TitleComponent>
                         </div>
                     </div>
@@ -232,11 +245,13 @@ const TabsComponent = () => {
                                         <img className="w-[72px] h-[72px] object-cover rounded-full" src={item.img} alt="" />
                                     </div>
                                     <div className="content">
-                                        <div className="flex items-center gap-0.5">
+                                        <ul className="flex items-center gap-0.5">
                                             {[...Array(5)].map((_, i) => (
-                                                <Star key={i} className="text-yellow" weight='fill' size={20} />
+                                                <li key={i}>
+                                                    <Star className="text-yellow" weight='fill' size={20} />
+                                                </li>
                                             ))}
-                                        </div>
+                                        </ul>
                                         <TitleComponent size='small-medium' className="md:mt-5 md:mb-6 mt-3 mb-4 text-bodyColor md:text-base">{item.desc}</TitleComponent>
                                         <div className="flex flex-col gap-2.5">
                                             <TitleComponent type='h6' className="text-black !font-bold">{item.name}</TitleComponent>

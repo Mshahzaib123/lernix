@@ -20,6 +20,10 @@ import category4 from './assets/categories4.svg';
 import category5 from './assets/categories5.svg';
 import category6 from './assets/categories6.svg';
 import videoSvg from './assets/video.svg';
+import fbSvg from './assets/fb.svg';
+import twitterSvg from './assets/twitter.svg';
+import linkedInSvg from './assets/linkedin.svg';
+import instagramSvg from './assets/instragram.svg';
 import headphoneSvg from './assets/headphone.svg';
 import documentSvg from './assets/document.svg';
 
@@ -127,17 +131,19 @@ export const copyrightMenuData = [
 
 export const socialData2 = [
     {
-        icon: "../src/assets/fb.svg",
+        icon: fbSvg,
         path: "/",
     },
     {
-        icon: "../src/assets/twitter.svg",
+        icon: twitterSvg,
         path: "/",
-    }, {
-        icon: "../src/assets/linkedin.svg",
+    },
+    {
+        icon: linkedInSvg,
         path: "/",
-    }, {
-        icon: "../src/assets/instragram.svg",
+    },
+    {
+        icon: instagramSvg,
         path: "/",
     },
 ]
@@ -212,19 +218,19 @@ export const CategoryData = [
 
 export const testimonialData = [
     {
-        stdReview: "Choosing LEARNIX was the best decision I made for my career. The courses are informative, engaging, and industry-relevant. The instructors provide excellent support, ensuring I understood every concept. Their practical teaching approach helped me gain confidence in my abilities. I landed my dream job before course completion! The experience was incredible, and I highly recommend Edugen to anyone looking to advance their digital career with the right skills.",
+        stdReview: "LEARNIX gave me the tools and confidence I needed to transition into web development. The content is modern, easy to follow, and packed with real examples. Instructors made difficult concepts feel manageable with constant guidance. I loved how each lesson built directly toward creating real-world projects. Their community and mentor support made me feel like I wasn’t alone. Before I finished the course, I had built a full portfolio and got a full-time role. I can’t thank LEARNIX enough for showing me what’s possible.",
         stdImg: './src/assets/testimonial6.webp',
         stdName: "Krystal France",
         status: "Ex-Student"
     },
     {
-        stdReview: "Enrolling in LEARNIX was a life-changing decision. The courses are well-structured, and the instructors are incredibly supportive. They provide step-by-step guidance, ensuring every concept is understood. Thanks to their expert mentorship, I landed a job in my desired field before completing the course. The learning process was smooth, engaging, and practical. I highly recommend Edugen to anyone looking to upskill and advance their career in the digital world.",
+        stdReview: "Choosing LEARNIX for my data science journey was a game changer. The curriculum is up-to-date and covers the essentials with depth and clarity. The instructors truly care about your growth and make complex topics like machine learning approachable. I appreciated the mix of video lessons, coding labs, and capstone projects. It helped me practice while learning. The career coaching was outstanding—I landed a junior data analyst position shortly after graduating. LEARNIX gave me skills and confidence that truly made a difference.",
         stdImg: './src/assets/testimonial6.webp',
         stdName: "Krystal France",
         status: "Ex-Student"
     },
     {
-        stdReview: "LEARNIX courses exceeded my expectations! The instructors are knowledgeable, patient, and dedicated to student success. The curriculum is well-designed, with real-world applications. I felt confident learning new skills, and the support I received was outstanding. I secured an amazing job before finishing my course. The experience was truly rewarding, and I encourage anyone wanting to improve their digital expertise to join Edugen. It’s the best investment for your future!",
+        stdReview: "LEARNIX stood out from other platforms I tried before. The digital marketing course was packed with value—SEO, analytics, ads, and more. Each topic was broken down in a way that made it practical and easy to apply. The instructors were engaging and quick to help. Their project-based learning helped me build an impressive portfolio. Even before completing all modules, I secured a part-time role with a local agency. LEARNIX turned a casual interest into a promising career path. Highly recommended to anyone serious.",
         stdImg: './src/assets/testimonial6.webp',
         stdName: "Krystal France",
         status: "Ex-Student"

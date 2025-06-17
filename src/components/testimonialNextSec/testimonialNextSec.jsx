@@ -17,7 +17,7 @@ const TestimonialNextSec = () => {
         <section>
             <div className="container">
                 <div className="relative bg-lightPink300 rounded-xl px-4 lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
-                    <div className="mx-auto text-center relative z-[2] max-w-[700px] w-full">
+                    <div className="mx-auto relative z-[2] max-w-[700px] w-full text-center">
                         <SectionTitle
                             subtitle="Testimonials"
                             title="Take the Next Step: Start Your Digital Journey"

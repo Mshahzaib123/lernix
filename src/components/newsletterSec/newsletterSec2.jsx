@@ -16,7 +16,7 @@ const NewsletterSec2 = () => {
                     <div className="relative lg:w-1/2 mt-8">
                         <div className="relative xl:max-w-[308px] sm:max-w-64 z-[2]">
                             <img className="rounded-xl" src={newsltter1Img} alt="" />
-                            <div className="absolute top-20 sm:-right-32 right-0 inline-block p-3.5 bg-whiteShade rounded-lg  shadow-boxShadow3 transform duration-300 z-[2] group hover:-translate-y-2.5">
+                            <div className="absolute top-20 sm:-right-32 right-0 inline-block p-3.5 bg-whiteShade rounded-lg shadow-boxShadow3 duration-300 z-[2] group hover:-translate-y-2.5">
                                 <ul className="flex items-center gap-x-4">
                                     <li className="flex items-center gap-1">
                                         <img src={udemyLogo} alt="Udemy LOGO" />
@@ -45,12 +45,12 @@ const NewsletterSec2 = () => {
                         <TitleComponent type='h2' className='text-black'>Join Our Newsletter To Stay Up To Date!</TitleComponent>
                         <TitleComponent size='base-medium' className='text-bodyColor mt-7 mb-9'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an</TitleComponent>
                         <ThemeInput
-                            type={"email"}
-                            name={"email"}
-                            id={"email"}
-                            placeholder={"Write your email"}
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Write your email"
                             required={true}
-                            buttonText={"Subscribe"}
+                            buttonText="Subscribe"
                             icon={EnvelopeSimple} className=''
                         />
                     </div>

@@ -16,8 +16,8 @@ const AboutSec3 = () => {
         <section className="lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
             <div className="container">
                 <div className="flex gap-6 lg:flex-row flex-col">
-                    <div className="lg:w-1/2 flex justify-center xl:mr-6 mr-0">
-                        <img src={aboutImg3} alt="" />
+                    <div className="lg:w-1/2 flex justify-center items-center xl:mr-6 mr-0">
+                        <img className='object-contain' src={aboutImg3} alt="" />
                     </div>
                     <div className="lg:w-1/2 2xl:ml-10 xl:ml-5 ml-0">
                         <SectionTitle

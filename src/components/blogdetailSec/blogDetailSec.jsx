@@ -121,8 +121,8 @@ const BlogDetailSec = () => {
                                     </div>
                                     <div className="grid grid-cols-[1fr_auto] items-center gap-4 p-5 rounded-lg bg-whiteShade">
                                         <div className="text-right">
-                                            <TitleComponent size='small-medium' className="text-primary xl:text-base">Prev Post</TitleComponent>
-                                            <TitleComponent size='small-semibold' className="text-black mt-1.5 xl:text-base">How Technology Can Help You Stay Healthy</TitleComponent>
+                                            <TitleComponent size='small-medium' className="text-primary xl:text-base">Next Post</TitleComponent>
+                                            <TitleComponent size='small-semibold' className="text-black mt-1.5 xl:text-lg">How Technology Can Help You Stay Healthy</TitleComponent>
                                         </div>
                                         <div className="md:order-1 flex justify-end">
                                             <img className="w-20 h-20 rounded object-cover" src={blogImg30} alt="" />
@@ -154,7 +154,7 @@ const BlogDetailSec = () => {
                                 </div>
                             ))}
                             <div>
-                        </div>
+                            </div>
                         </div>
                         <div>
                             <h3 className="text-black 2xl:text-4xl xl:text-3xl text-2xl leading-normal font-bold">Leave A Reply</h3>
@@ -171,7 +171,7 @@ const BlogDetailSec = () => {
                                 <div className="w-full">
                                     <FormInput name={"url"} type={"url"} placeholder={"Website Address*"} />
                                 </div>
-                                <div className="textarea_otr">
+                                <div>
                                     <textarea className="w-full h-[200px] bg-grey100 lg:p-5 p-3 text-bodyColor resize-none lg:text-base text-sm focus:outline-none" placeholder="Your Message*"></textarea>
                                 </div>
                                 <div className='flex'>

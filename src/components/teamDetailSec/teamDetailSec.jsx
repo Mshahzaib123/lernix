@@ -67,13 +67,15 @@ const TeamDetailSec = () => {
                             </ul>
                             <div className="mt-8">
                                 <TitleComponent type='h5' className="text-black">Follow Me On:</TitleComponent>
-                                <div className="flex items-center gap-2 mt-5">
+                                <ul className="flex items-center gap-2 mt-5">
                                     {socialData2.map((item, index) => (
-                                        <Link key={index} to={item.path}>
-                                            <img className="lg:w-10 lg:h-10 sm:w-12 sm:h-12 w-10 h-10 rounded object-cover" src={item.icon} alt="" />
-                                        </Link>
+                                        <li key={index}>
+                                            <Link to={item.path}>
+                                                <img className="lg:w-10 lg:h-10 sm:w-12 sm:h-12 w-10 h-10 rounded object-cover" src={item.icon} alt="" />
+                                            </Link>
+                                        </li>
                                     ))}
-                                </div>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -129,7 +131,7 @@ const TeamDetailSec = () => {
                     </div>
                 </div>
             </div>
-            <img className="absolute 3xl:top-[444px] 3xl:left-44 top-20 left-2.5 -z-[1] lg:block hidden" src={shape26} alt="" />
+            <img className="absolute -z-[1] 3xl:top-[444px] 3xl:left-44 top-20 left-2.5 lg:block hidden" src={shape26} alt="" />
             <img className="absolute -z-[1] 3xl:top-40 3xl:right-[188px] top-24 right-5 lg:block hidden" src={shape27} alt="" />
             <img className="absolute -z-[1] top-[925px] 3xl:left-48 left-14 lg:block hidden" src={shape28} alt="" />
             <img className="absolute -z-[1] left-52 bottom-[274px] lg:block hidden" src={shape29} alt="" />

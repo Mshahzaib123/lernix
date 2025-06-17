@@ -17,6 +17,13 @@ const themeStyles = {
         splitText: "text-white group-hover:text-blue-700",
         border: "border-blue-600"
     },
+    primary3: {
+        solid: "bg-primary text-white hover:text-black",
+        afterStyle: "bg-white",
+        splitIcon: "bg-blue-600 text-white group-hover:bg-blue-700",
+        splitText: "text-white group-hover:text-blue-700",
+        border: "border-blue-600"
+    },
     dark: {
         solid: "bg-black text-white hover:bg-gray-900",
         splitIcon: "bg-black text-white group-hover:bg-gray-900",

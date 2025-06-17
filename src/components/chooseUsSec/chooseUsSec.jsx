@@ -21,17 +21,19 @@ const ChooseUsSec = () => {
                             headingLevel='h2'
                         />
                         <TitleComponent size='large-medium' className='text-bodyColor text-base xl:mt-10 mb-4 mt-7'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</TitleComponent>
-                        {progressBarData.map((item, index) => (
-                            <div className="xl:mb-10 mb-6 last:mb-0" key={index}>
-                                <div className="flex justify-between mb-3">
-                                    <TitleComponent type='h6' className='text-bodyColor !font-bold'>{item.skill}</TitleComponent>
-                                    <TitleComponent size='large-bold' className='text-bodyColor'>{item.percent}</TitleComponent>
-                                </div>
-                                <div className="relative w-full h-2.5 bg-grey200 rounded-full">
-                                    <div className={`absolute h-1.5 bg-gradient rounded-full top-1/2 -translate-y-1/2 left-0.5`} style={{ width: `${item.percent}` }} />
-                                </div>
-                            </div>
-                        ))}
+                        <ul>
+                            {progressBarData.map((item, index) => (
+                                <li key={index} className="xl:mb-10 mb-6 last:mb-0">
+                                    <div className="flex justify-between mb-3">
+                                        <TitleComponent type='h6' className='text-bodyColor !font-bold'>{item.skill}</TitleComponent>
+                                        <TitleComponent size='large-bold' className='text-bodyColor'>{item.percent}</TitleComponent>
+                                    </div>
+                                    <div className="relative w-full h-2.5 bg-grey200 rounded-full">
+                                        <div className={`absolute h-1.5 bg-gradient rounded-full top-1/2 -translate-y-1/2 left-0.5`} style={{ width: `${item.percent}` }} />
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                     <div className="relative flex justify-center lg:w-1/2 xl:ml-12">
                         <img className="relative z-[3]" src={choose1} alt="Choose Us" />

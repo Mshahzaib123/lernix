@@ -36,7 +36,7 @@ const Header = () => {
     const headerRef = useRef(null)
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 10) {
+            if (window.scrollY > 500) {
                 if (location.pathname === '/homepage3') {
                     headerRef.current?.classList.add("bg-darkBlue2");
                     headerRef.current?.classList.remove("bg-white");
@@ -46,8 +46,10 @@ const Header = () => {
                     headerRef.current?.classList.remove("bg-darkBlue2");
                 }
                 headerRef.current?.classList.add("sticky", "shadow-boxShadow", "z-50");
+                headerRef.current?.classList.remove("fixed");
             } else {
                 headerRef.current?.classList.remove("sticky", "bg-darkBlue2", "bg-white", "shadow-boxShadow", "z-50");
+                headerRef.current?.classList.add("fixed");
             }
         };
 
