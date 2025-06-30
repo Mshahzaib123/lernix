@@ -37,8 +37,7 @@ const BlogCard2 = ({ data, className }) => {
                     (location.pathname === "/blog-standard" || location.pathname === "/category") &&
                     <TitleComponent size='base-medium' className="mb-4 text-bodyColor">{data.desc}</TitleComponent>
                 }
-                <Link to={data.path} className="relative text-bodyColor lg:text-lg text-base font-semibold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-black after:duration-300 duration-300 hover:text-black hover:after:w-full">Read More</Link>
-
+                <Link to={`/blog-detail/${data.id}`} className="relative text-bodyColor lg:text-lg text-base font-semibold after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-black after:duration-300 duration-300 hover:text-black hover:after:w-full">Read More</Link>
             </div>
         </div>
     )

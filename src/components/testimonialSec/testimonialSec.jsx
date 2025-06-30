@@ -8,7 +8,9 @@ const TestimonialSec = () => {
         <section className="lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
             <div className="container">
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
-                    <img src={testimonialImg} alt="" />
+                    <div className='flex justify-center'>
+                        <img src={testimonialImg} alt="" />
+                    </div>
                     <div className="self-center">
                         <SectionTitle
                             subtitle="Testimonials"

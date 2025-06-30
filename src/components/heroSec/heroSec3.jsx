@@ -38,7 +38,7 @@ const HeroSec3 = () => {
                     </div>
                     <div className="relative lg:w-1/2">
                         <img className='max-w-[480px] w-full ml-auto' src={banner3} alt="hero-image" />
-                        <div className="flex justify-between items-center xl:gap-x-4 gap-x-2.5 absolute z-[2] right-0 bottom-4 md:p-5 p-4 bg-white shadow-boxShadow2 rounded-lg duration-300 after:content-[''] after:absolute after:top-0 after:left-0 after:-z-[1] after:w-1 after:h-full after:bg-primary after:rounded-tl-[10px] after:rounded-bl-[10px] after:duration-500 transform group hover:-translate-y-2.5 hover:after:w-full hover:after:rounded-lg">
+                        <div className="flex justify-between items-center xl:gap-x-4 gap-x-2.5 absolute z-[2] right-0 bottom-4 md:p-5 p-4 bg-white shadow-boxShadow2 rounded-lg duration-300 after:content-[''] after:absolute after:top-0 after:left-0 after:-z-[1] after:w-1 after:h-full after:bg-primary after:rounded-tl-[10px] after:rounded-bl-[10px] after:duration-500 group hover:-translate-y-2.5 hover:after:w-full hover:after:rounded-lg">
                             <div>
                                 <TitleComponent size='extra-large-medium' className='text-lg text-black duration-300 group-hover:text-white'>Chat with a mentor</TitleComponent>
                                 <TitleComponent size='base-medium' className='text-sm text-bodyColor duration-300 group-hover:text-white'>Find your mentor here</TitleComponent>

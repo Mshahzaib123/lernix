@@ -6,7 +6,7 @@ import TitleComponent from '../titleComponent/titleComponent';
 import ThemeButton from '../themeButton/themeButton';
 
 import banner2 from '../../assets/banner2.webp';
-import bannerWrapBg from '../../assets/banner-warp-bg-shape.webp';
+import bannerWrapBg from '../../assets/banner-warp-bg-shape-2.webp';
 import bannerWrapLineShape from '../../assets/banner-warp-line-shape.svg';
 import bannerWrapLineRound from '../../assets/banner-warp-line-round.webp';
 

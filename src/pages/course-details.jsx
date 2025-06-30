@@ -4,7 +4,7 @@ import CourseDetailSec from '../components/courseDetailSec/courseDetailSec'
 const CourseDetails = () => {
     return (
         <>
-            <HeroSec4 heading="Course Details" subHeading="Course Details" />
+            <HeroSec4 heading="Course Details" subHeading="Courses Details" />
             <CourseDetailSec />
         </>
     )

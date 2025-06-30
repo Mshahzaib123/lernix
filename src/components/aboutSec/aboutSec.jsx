@@ -31,7 +31,7 @@ const AboutSec = () => {
                                     <img className="xl:max-w-[264px] lg:max-w-full w-full rounded-xl" src={aboutImg2} alt="" />
                                 </div>
                             </div>
-                            <div className="relative sm:w-1/2 z-[2] flex flex-col justify-end">
+                            <div className="relative sm:w-1/2 z-[2] flex flex-col justify-start">
                                 <div className="sm:mt-12 mt-0 2xl:-ml-9 ml-0 mb-6">
                                     <img className="2xl:max-w-80 sm:max-w-full w-full rounded-xl" src={aboutImg3} alt="" />
                                 </div>
@@ -47,9 +47,7 @@ const AboutSec = () => {
                             </div>
                         </div>
                         <img className="absolute top-5 2xl:-left-12 -left-2.5 animate-rotateMe2 sm:block hidden" src={aboutShape1} alt="About Shape" />
-
-                        <img className="absolute top-2 2xl:left-[308px] left-[395px] sm:block hidden animate-moveBg" src={aboutShape2} alt="About Shape" />
-
+                        <img className="absolute -top-3 2xl:left-[308px] left-[395px] sm:block hidden animate-moveBg" src={aboutShape2} alt="About Shape" />
                     </div>
                     <div className="lg:w-1/2 2xl:ml-10 xl:ml-5 ml-0">
                         <SectionTitle

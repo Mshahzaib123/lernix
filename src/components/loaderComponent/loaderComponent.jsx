@@ -1,4 +1,4 @@
-import brandLogo from '../../assets/brand-logo-dark.svg';
+import brandLogo from '../../assets/brand-logo-dark-2.svg';
 
 const LoaderComponent = () => {
     const textAlpha = ["L", "E", "A", "R", "N", "I", "X"]

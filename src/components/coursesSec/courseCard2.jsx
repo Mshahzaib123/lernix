@@ -10,7 +10,7 @@ const CourseCard2 = ({ data }) => {
                     <img className="object-cover w-full duration-300 group-hover/image:scale-110" src={data.img} alt="" />
                 </Link>
                 <div className="absolute 2xl:top-6 2xl:right-6 top-4 right-4">
-                    <TitleComponent size='base-medium' className='bg-secondary text-white py-1.5 px-3 rounded 2xl:text-lg 2xl:font-bold'>{data.category}</TitleComponent>
+                    <TitleComponent size='base-medium' className='bg-secondary text-white py-1.5 px-3 rounded 2xl:text-lg'>{data.category}</TitleComponent>
                 </div>
             </div>
             <div className="2xl:py-6 2xl:px-8 py-3.5 px-5 bg-whiteShade">

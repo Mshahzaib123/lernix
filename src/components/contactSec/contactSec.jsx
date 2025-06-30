@@ -4,9 +4,9 @@ import TitleComponent from '../titleComponent/titleComponent';
 import ThemeButton from '../themeButton/themeButton';
 import FormInput from '../formInput/formInput';
 
-import contact1Svg from '../../assets/contact1.svg';
+import contact1Svg from '../../assets/contact1-2.svg';
 import contact2Svg from '../../assets/contact2.svg';
-import contact3Svg from '../../assets/contact3.svg';
+import contact3Svg from '../../assets/contact3-2.svg';
 
 const ContactSec = () => {
     return (
@@ -21,14 +21,14 @@ const ContactSec = () => {
                                 highlightedText="Touch"
                                 headingLevel='h2'
                             />
-                            <ul className="flex flex-col gap-10 mt-14">
+                            <ul className="flex flex-col gap-5 lg:mt-14 mt-7">
                                 <li className="grid grid-cols-[auto_1fr] items-center gap-5">
                                     <div className="flex justify-center items-center w-14 h-14 bg-lightPurple100 rounded">
                                         <img src={contact1Svg} alt="" />
                                     </div>
                                     <div>
                                         <TitleComponent size='large-semibold' className="text-black mb-1">Email-Us :</TitleComponent>
-                                        <Link to="mailto:zainmateen259@gmail.com" className="text-bodyColor text-base font-medium duration-300 hover:text-primary">zainmateen259@gmail.com</Link>
+                                        <Link to="mailto:zainmateen259@gmail.com" className="text-bodyColor sm:text-base text-sm font-medium duration-300 hover:text-primary">learnix@gmail.com</Link>
                                     </div>
                                 </li>
                                 <li className="grid grid-cols-[auto_1fr] items-center gap-5">
@@ -37,7 +37,7 @@ const ContactSec = () => {
                                     </div>
                                     <div>
                                         <TitleComponent size='large-semibold' className="text-black mb-1">Call Us :</TitleComponent>
-                                        <Link to="/" className="text-bodyColor text-base font-medium duration-300 hover:text-primary">+123 456 8900</Link>
+                                        <Link to="/" className="text-bodyColor sm:text-base text-sm font-medium duration-300 hover:text-primary">+123 456 8900</Link>
                                     </div>
                                 </li>
                                 <li className="grid grid-cols-[auto_1fr] items-center gap-5">
@@ -46,23 +46,23 @@ const ContactSec = () => {
                                     </div>
                                     <div>
                                         <TitleComponent size='large-semibold' className="text-black mb-1">Office :</TitleComponent>
-                                        <TitleComponent size='base-medium' className="text-bodyColor">Mountain Green Road 2389, NY, USA</TitleComponent>
+                                        <TitleComponent size='small-medium' className="text-bodyColor sm:text-base">Mountain Green Road 2389, NY, USA</TitleComponent>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div className="lg:w-2/3">
                             <div className="flex flex-col gap-6 xl:p-7 p-5 bg-white rounded-lg shadow-boxShadow">
-                                <div className="grid grid-cols-2 gap-5">
+                                <div className="grid md:grid-cols-2 gap-5">
                                     <div className="w-full">
-                                        <FormInput name={"Name"} type={"text"} placeholder={"Name*"} />
+                                        <FormInput name={"Name"} type={"text"} placeholder={"Name*"} className="xl:text-base text-sm" />
                                     </div>
                                     <div className="w-full">
-                                        <FormInput name={"Email"} type={"email"} placeholder={"Email*"} />
+                                        <FormInput name={"Email"} type={"email"} placeholder={"Email*"} className="xl:text-base text-sm" />
                                     </div>
                                 </div>
                                 <div className="w-full">
-                                    <FormInput name={"Email"} type={"url"} placeholder={"Wesbite Address*"} />
+                                    <FormInput name={"Email"} type={"url"} placeholder={"Website Address*"} className="xl:text-base text-sm" />
                                 </div>
                                 <textarea className="w-full h-[200px] bg-grey100 text-greyShade text-base font-medium leading-normal p-5 rounded border-none outline-none resize-y" placeholder="Your Message*"></textarea>
                                 <div className="flex">

@@ -1,11 +1,11 @@
 import { FacebookLogo, GoogleLogo, XLogo, LinkedinLogo, StarHalf, MapPin, Envelope, Phone, UserRectangle, FileText, Clock, Star, Medal, Globe } from '@phosphor-icons/react';
 
-import FunFact1 from './assets/funfact1.svg';
-import FunFact2 from './assets/funfact2.svg';
-import FunFact3 from './assets/funfact3.svg';
-import FunFact4 from './assets/funfact4.svg';
+import FunFact1 from './assets/funfact1-2.svg';
+import FunFact2 from './assets/funfact2-2.svg';
+import FunFact3 from './assets/funfact3-2.svg';
+import FunFact4 from './assets/funfact4-2.svg';
 import checSvg from './assets/check.svg';
-import quoteSvg1 from './assets/quote1.svg';
+import quoteSvg1 from './assets/quote1-2.svg';
 import quoteSvg2 from './assets/quote2.svg';
 import quoteSvg3 from './assets/quote3.svg';
 import partner1 from './assets/partner1.svg';
@@ -54,7 +54,7 @@ export const menuData = [
         dropdown: [
             { title: "Courses List", path: "/courses-list-view" },
             { title: "Courses Grid", path: "/courses-grid-view" },
-            { title: "Courses Detail", path: "/courses-detail" },
+            { title: "Courses Details", path: "/courses-detail" },
             { title: "Courses With Sidebar", path: "/courses-with-sidebar" },
         ]
     },
@@ -125,8 +125,8 @@ export const footerContactData = [
 export const copyrightMenuData = [
     { title: "Company", path: "/" },
     { title: "Support", path: "/" },
-    { title: "Privacy", path: "/" },
-    { title: "Conatct", path: "/" }
+    { title: "Privacy", path: "/privacy-policy" },
+    { title: "Contact", path: "/contact-us" }
 ]
 
 export const socialData2 = [

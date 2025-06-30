@@ -15,8 +15,8 @@ const CourseCardG = ({ data }) => {
             </div>
             <div className="2xl:py-7 2xl:px-6 p-5">
                 <div className="flex items-center justify-between 2xl:mb-6 mb-5">
-                    <TitleComponent size='small-medium' className="relative xl:py-2.5 py-2 xl:px-4 px-3 bg-grey100 rounded md:text-base text-greyShade z-[1] cursor-pointer duration-500 after:content-[''] after:absolute after:top-0 after:left-0 after:w-0 after:h-full after:bg-[#8a47cb] after:rounded after:-z-[1] after:duration-500 hover:after:w-full hover:text-whiteShade">{data.level}</TitleComponent>
-                    <div className="relative z-[1] flex justify-center items-center xl:w-11 xl:h-11 w-9 h-9 bg-grey100 rounded cursor-pointer duration-300 after:content-[''] after:absolute after:top-0 after:left-0 after:w-0 after:h-full after:bg-[#8a47cb] after:rounded after:-z-[1] after:duration-300 group hover:after:w-full">
+                    <TitleComponent size='small-medium' className="relative xl:py-2.5 py-2 xl:px-4 px-3 bg-grey100 rounded md:text-base text-greyShade z-[1] cursor-pointer duration-500 after:content-[''] after:absolute after:top-0 after:left-0 after:w-0 after:h-full after:bg-primary after:rounded after:-z-[1] after:duration-500 hover:after:w-full hover:text-whiteShade">{data.level}</TitleComponent>
+                    <div className="relative z-[1] flex justify-center items-center xl:w-11 xl:h-11 w-9 h-9 bg-grey100 rounded cursor-pointer duration-300 after:content-[''] after:absolute after:top-0 after:left-0 after:w-0 after:h-full after:bg-primary after:rounded after:-z-[1] after:duration-300 group hover:after:w-full">
                         <Heart className='text-bodyColor duration-300 group-hover:text-whiteShade' weight='bold' size={16} />
                     </div>
                 </div>

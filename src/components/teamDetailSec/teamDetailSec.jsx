@@ -21,7 +21,7 @@ import CourseCard2 from '../coursesSec/courseCard2';
 // import team14 from '../../assets/team14.webp';
 // import team15 from '../../assets/team15.webp';
 import team16 from '../../assets/team16.webp';
-import rate1Svg from '../../assets/rate1.svg';
+import rate1Svg from '../../assets/rate1-2.svg';
 import rate2Svg from '../../assets/rate2.svg';
 import rate3Svg from '../../assets/rate3.svg';
 import shape26 from '../../assets/shape26.svg';
@@ -39,12 +39,12 @@ const TeamDetailSec = () => {
             <div className="container">
                 <div className="relative z-[2] flex gap-6 items-start lg:flex-row flex-col">
                     <div className="lg:w-1/3 bg-whiteShade overflow-hidden rounded-lg shadow-boxShadow2">
-                        <div className="flex">
-                            <img className='scale-105' src={teamDetail?.img ? teamDetail.img : team16} alt="" />
+                        <div className="flex overflow-hidden w-full">
+                            <img className='w-full max-h-[650px] scale-105 object-top object-cover' src={teamDetail?.img ? teamDetail.img : team16} alt="" />
                         </div>
                         <div className="xl:p-8 p-5">
                             <TitleComponent type='h4' className="text-black">{teamDetail?.name ? teamDetail.name : "Julia B. Corbin"}</TitleComponent>
-                            <TitleComponent size='base-medium' className="xl:mt-5 xl:mb-10 my-5">Professor & Chair of Department of Computer Science at University the where been since 1994. vulput for the pellentesque commodo.</TitleComponent>
+                            <TitleComponent size='base-medium' className="xl:mt-5 xl:mb-10 my-5 text-bodyColor">Professor & Chair of Department of Computer Science at University the where been since 1994. vulput for the pellentesque commodo.</TitleComponent>
                             <ul className="flex flex-col xl:gap-8 gap-5">
                                 <li className="grid grid-cols-[auto_1fr] items-center gap-4">
                                     <div className="flex justify-center items-center w-8 h-8 bg-secondary rounded">

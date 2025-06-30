@@ -47,7 +47,7 @@ const LegalTermsSec = () => {
                         </li>
                         <li className="list-disc mb-2.5 last:mb-0">
                             <TitleComponent size='small-medium' className="text-bodyColor md:text-base">PayPal: Shop easily online without having to enter your credit card details on the website.Your account will be charged once the order is completed. To register for a PayPal account, visit the website
-                                <span className="text-darkBrown text-small cursor-pointer duration-300 hover:text-primary">paypal.com</span>
+                                <span className="text-darkBrown text-small cursor-pointer duration-300 hover:text-primary"> paypal.com</span>
                             </TitleComponent>
                         </li>
                     </ul>

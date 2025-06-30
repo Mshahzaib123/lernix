@@ -4,8 +4,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { menuData, socialData } from "../../Data";
 import { CaretDown, List, X, Plus } from "@phosphor-icons/react";
 
-import brandLogoDark from '../../assets/brand-logo-dark.svg';
-import brandLogoLight from '../../assets/brand-logo-light.svg'
+import brandLogoDark from '../../assets/brand-logo-dark-2.svg';
+import brandLogoLight from '../../assets/brand-logo-light-2.svg'
 import ThemeButton from "../themeButton/themeButton";
 import TitleComponent from "../titleComponent/titleComponent";
 
@@ -72,19 +72,19 @@ const Header = () => {
                         <li className="relative group" key={index}>
                             {item.dropdown ? (
                                 <>
-                                    <button className="flex justify-between items-center gap-x-2 w-full cursor-pointer duration-300 group" onClick={() => toggleCollapse(index)}>
-                                        <TitleComponent size="base-semibold" className={`${item.dropdown.find(drop => drop.path === location.pathname) || openIndex === index ? "text-primary" : "text-black group-hover:text-primary"} duration-300`}>{item.title}</TitleComponent>
-                                        <Plus className={`${item.dropdown.find(drop => drop.path === location.pathname) || openIndex === index ? "text-primary" : "text-black group-hover:text-primary"} ${openIndex === index ? "rotate-[225deg]" : ""} duration-300`} size={16} weight="bold" />
+                                    <button className="flex justify-between items-center gap-x-2 w-full cursor-pointer duration-500 group" onClick={() => toggleCollapse(index)}>
+                                        <TitleComponent size="base-semibold" className={`${item.dropdown.find(drop => drop.path === location.pathname) || openIndex === index ? "text-primary" : "text-black group-hover:text-primary"} duration-500`}>{item.title}</TitleComponent>
+                                        <Plus className={`${item.dropdown.find(drop => drop.path === location.pathname) || openIndex === index ? "text-primary" : "text-black group-hover:text-primary"} ${openIndex === index ? "rotate-[225deg]" : ""} duration-500`} size={16} weight="bold" />
                                     </button>
                                     <ul
                                         ref={(el) => (contentRefs.current[index] = el)}
-                                        className="overflow-hidden duration-300 ease-in-out"
+                                        className="overflow-hidden duration-500 ease-in-out"
                                         style={{
-                                            height: openIndex === index ? `${contentHeights[index] + 24}px` : "0px",
+                                            height: openIndex === index ? contentHeights[index] : "0px",
                                         }}>
                                         <div className="py-4 px-3">
                                             {item.dropdown.map((subItem, subIndex) => (
-                                                <li className="mb-2" key={subIndex}>
+                                                <li className="mb-2 last:mb-0" key={subIndex}>
                                                     <Link className={`w-full h-full text-sm font-semibold ${location.pathname === subItem.path ? "text-primary" : "text-black duration-300 hover:text-primary"}`} to={subItem.path} onClick={toggleMenu}>{subItem.title}</Link>
                                                 </li>
                                             ))}
@@ -122,13 +122,13 @@ const Header = () => {
                                     {item.dropdown ? (
                                         <>
                                             <div className="flex items-center gap-x-2 cursor-pointer group">
-                                                <TitleComponent size='large-semibold' className={`${item.dropdown.find(drop => drop.path === location.pathname) ? "text-primary" : `${homepage3MenuColor} duration-300 group-hover:text-primary`}`}>{item.title}</TitleComponent>
+                                                <p className={`xl:text-lg text-base font-semibold ${item.dropdown.find(drop => drop.path === location.pathname) ? "text-primary" : `${homepage3MenuColor} duration-300 group-hover:text-primary`}`}>{item.title}</p>
                                                 <CaretDown className={`${item.dropdown.find(drop => drop.path === location.pathname) ? "text-primary" : `${homepage3MenuColor} duration-300 group-hover:text-primary`}`} size={16} weight="bold" />
                                             </div>
                                             <ul className="absolute z-10 top-24 left-0 w-60 bg-white shadow-dropdownShadow rounded-4 opacity-0 invisible duration-300 group-hover:top-14 group-hover:opacity-100 group-hover:visible">
                                                 {item.dropdown.map((subItem, subIndex) => (
                                                     <li className="border-b-2 border-dashed border-greyShade last:border-b-0" key={subIndex}>
-                                                        <Link className={`w-full h-full p-4 text-base font-semibold ${location.pathname === subItem.path ? "text-primary" : "text-black duration-300 hover:text-primary"}`} to={subItem.path}>{subItem.title}</Link>
+                                                        <Link className={`w-full h-full p-3.5 xl:text-base text-sm font-semibold ${location.pathname === subItem.path ? "text-primary" : "text-black duration-300 hover:text-primary"}`} to={subItem.path}>{subItem.title}</Link>
                                                     </li>
                                                 ))}
                                             </ul>

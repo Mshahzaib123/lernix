@@ -6,9 +6,9 @@ import TitleComponent from '../titleComponent/titleComponent';
 import ThemeButton from '../themeButton/themeButton';
 import ThemeInput from '../themeInput/themeInput';
 
-import brandLogo from '../../assets/brand-logo-light.svg';
+import brandLogo from '../../assets/brand-logo-light-2.svg';
 import shape24 from '../../assets/shape24.webp';
-import navigationCircle from '../../assets/footer-navigation-circle.svg';
+import navigationCircle from '../../assets/footer-navigation-circle-2.svg';
 
 const Footer2 = () => {
     return (

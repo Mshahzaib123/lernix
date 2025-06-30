@@ -3,8 +3,8 @@ import { ArrowUp } from '@phosphor-icons/react';
 import { footerNavigationData, socialData, copyrightMenuData } from '../../Data';
 import TitleComponent from '../titleComponent/titleComponent';
 
-import brandLogoLight from '../../assets/brand-logo-light.svg';
-import brandLogoDark from '../../assets/brand-logo-dark.svg';
+import brandLogoLight from '../../assets/brand-logo-light-2.svg';
+import brandLogoDark from '../../assets/brand-logo-dark-2.svg';
 import playStore from '../../assets/google.svg';
 import appStore from '../../assets/app-store.svg';
 import footerShape1 from '../../assets/shape12.svg';
@@ -78,7 +78,7 @@ const Footer = () => {
             <section className="relative pt-9 py-4 md:py-4 bg-primary">
                 <div className="container">
                     <div className="flex gap-y-4 gap-x-8 justify-between items-center md:flex-row flex-col">
-                        <TitleComponent size='base-medium' className='text-white text-center'>© Copyright 2024 | Learnix Template | All Rights Reserved</TitleComponent>
+                        <TitleComponent size='small-medium' className='text-white text-center lg:text-base'>© Copyright 2024 | Learnix Template | All Rights Reserved</TitleComponent>
                         <ul className="flex xl:gap-x-10 lg:gap-x-8 gap-x-5">
                             {copyrightMenuData.map((item, index) => (
                                 <li key={index}>

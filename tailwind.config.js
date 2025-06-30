@@ -22,7 +22,8 @@ export default {
       },
       backgroundColor: {
         transparent: 'transparent',
-        primary: '#8a47cb',
+        // primary: '#8a47cb',
+        primary: '#0063f4',
         secondary: '#1cca81',
         whiteShade: '#fbfbfb',
         white: '#ffffff',
@@ -43,7 +44,8 @@ export default {
         darkPink100: '#ff7e84',
         grey100: '#f0f0f0',
         grey200: '#d9d9d9',
-        lightPurple100: '#efe8f6',
+        // lightPurple100: '#efe8f6',
+        lightPurple100: '#599cff30',
         lightGreen100: '#e3f9f6'
       },
       keyframes: {
@@ -112,7 +114,8 @@ export default {
       },
       colors: {
         transparent: 'transparent',
-        primary: '#8a47cb',
+        // primary: '#8a47cb',
+        primary: '#0063f4',
         secondary: '#1cca81',
         whiteShade: '#fbfbfb',
         whiteShade200: '#cfcfcf',
@@ -134,7 +137,8 @@ export default {
       },
       borderColor: {
         transparent: 'transparent',
-        primary: '#8a47cb',
+        // primary: '#8a47cb',
+        primary: '#0063f4',
         secondary: '#1cca81',
         whiteShade200: '#ececec',
         whiteShade: '#fbfbfb',
@@ -145,7 +149,7 @@ export default {
         bodyColor2: '#878787',
         greyLight: '#f0f0f0',
         greyShade: '#ededed',
-        lightPurple100: '#b78fde'
+        lightPurple100: '#599cff',
       },
       boxShadow: {
         boxShadow: '0px 10px 40px 0px rgba(0, 0, 0, 0.05)',
