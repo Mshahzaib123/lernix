@@ -11,7 +11,7 @@ const CourseCardL = ({ data }) => {
             </Link>
             <div className="content">
                 <div className="flex justify-between items-center">
-                    <TitleComponent size='small-bold' className='text-primary xl:text-xl duration-300 group-hover:text-secondary'>{data.price}</TitleComponent>
+                    <TitleComponent size='small-bold' className='text-secondary xl:text-xl duration-300 group-hover:text-primary'>{data.price}</TitleComponent>
                     <ul className="flex items-center gap-0.5">
                         {data.ratingStar.map((item, index) => (
                             <li key={index}>

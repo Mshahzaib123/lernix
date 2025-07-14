@@ -20,7 +20,7 @@ const InstructorCard = ({ data }) => {
                     </div>
                     <div className="absolute top-0 right-0 overflow-hidden rounded-b scale-y-0 origin-top opacity-0 invisible duration-300 group-hover:scale-y-100 group-hover:visible group-hover:opacity-100">
                         {socialData.slice(0, 3).map((item, index) => (
-                            <Link key={index} to={item.path} className="flex justify-center items-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-14 md:h-14 w-12 h-12 bg-primary">
+                            <Link key={index} to={item.path} className="flex justify-center items-center xl:w-14 xl:h-14 lg:w-12 lg:h-12 md:w-14 md:h-14 w-12 h-12 bg-primary duration-300 hover:bg-primaryDark">
                                 <item.icon className='text-white' weight='bold' size={24} />
                             </Link>
                         ))}

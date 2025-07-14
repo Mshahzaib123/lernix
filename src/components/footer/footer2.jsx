@@ -24,8 +24,8 @@ const Footer2 = () => {
                         <ul className="flex items-center gap-4 flex-wrap 2xl:mt-5 mt-4">
                             {socialData.map((item, index) => (
                                 <li key={index}>
-                                    <Link to={item.path} className="flex justify-center items-center 2xl:w-10 2xl:h-10 w-9 h-9 bg-transparent border-1 border-solid boder-whiteShade rounded duration-300 group hover:bg-primary hover:-translate-y-2.5 hover:border-transparent">
-                                        <item.icon className='text-whiteShade' weight='bold' size={22} />
+                                    <Link to={item.path} className="relative flex justify-center items-center 2xl:w-10 2xl:h-10 w-9 h-9 bg-transparent border-1 border-solid boder-whiteShade rounded duration-300 group hover:bg-primary hover:-translate-y-2.5 hover:border-transparent">
+                                        <item.icon className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-whiteShade' weight='bold' size={22} />
                                     </Link>
                                 </li>
                             ))}

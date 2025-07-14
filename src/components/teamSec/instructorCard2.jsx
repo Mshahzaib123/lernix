@@ -22,7 +22,7 @@ const InstructorCard2 = ({ data, className }) => {
                         <ul className="overflow-hidden rounded">
                             {socialData.slice(0, 3).map((item, index) => (
                                 <li key={index} className="border-b-1 last:border-b-0 border-b-solid boder-b-whiteShade">
-                                    <Link to={item.path} className="flex justify-center items-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-14 md:h-14 w-12 h-12 bg-primary">
+                                    <Link to={item.path} className="flex justify-center items-center xl:w-16 xl:h-16 lg:w-12 lg:h-12 md:w-14 md:h-14 w-12 h-12 bg-primary duration-300 hover:bg-primaryDark">
                                         <item.icon className='text-white' size={24} />
                                     </Link>
                                 </li>

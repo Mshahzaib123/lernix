@@ -12,7 +12,7 @@ const ChooseUsSec = () => {
         <section className="relative bg-lightPink200 lg:pt-32 md:pt-[90px] pt-[70px] ">
             <div className="container">
                 <div className="flex gap-6 lg:flex-row flex-col justify-center">
-                    <div className="lg:w-1/2">
+                    <div className="relative lg:w-1/2 z-10">
                         <SectionTitle
                             subtitle="Why Choose Us"
                             title="One Platform & Many"
@@ -45,7 +45,7 @@ const ChooseUsSec = () => {
                     </div>
                 </div>
             </div>
-            <img className="absolute 2xl:top-[86px] 2xl:left-9 lg:top-8 lg:left-8 lg:block hidden" src={shape3} alt="" />
+            <img className="absolute 2xl:top-16 left-0 lg:top-8 2xl:max-w-full max-w-14 lg:block hidden" src={shape3} alt="" />
         </section>
     )
 }

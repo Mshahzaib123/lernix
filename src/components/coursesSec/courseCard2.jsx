@@ -14,7 +14,7 @@ const CourseCard2 = ({ data }) => {
                 </div>
             </div>
             <div className="2xl:py-6 2xl:px-8 py-3.5 px-5 bg-whiteShade">
-                <TitleComponent size='base-medium' className='text-secondary xl:text-lg 2xl:text-xl'>{data.price}</TitleComponent>
+                <TitleComponent size='base-semibold' className='text-secondary xl:text-lg 2xl:text-xl duration-300 group-hover:text-primary'>{data.price}</TitleComponent>
                 <Link to={`/courses-detail/${data.id}`} className="text-black 2xl:mt-5 2xl:mb-4 mt-4 mb-5 xl:text-2xl lg:text-xl text-lg leading-normal font-bold duration-300 hover:text-primary">{data.heading}</Link>
                 <ul className="flex justify-between items-center">
                     <li className="flex items-center gap-x-2">

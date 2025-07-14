@@ -10,7 +10,7 @@ const BlogMCard = ({ data }) => {
             <div className="2xl:mt-8 mt-6">
                 <div className="flex justify-between items-center">
                     <TitleComponent size='small-medium' className='text-bodyColor xl:text-base'>{data.datePosted}</TitleComponent>
-                    <TitleComponent size='small-medium' className='bg-black rounded 2xl:py-2.5 2xl:px-3 p-2 text-whiteShade xl:text-base'>{data.field}</TitleComponent>
+                    <TitleComponent size='small-medium' className='bg-black rounded 2xl:py-2 2xl:px-3 p-2 text-whiteShade xl:text-base'>{data.field}</TitleComponent>
                 </div>
                 <Link to={`/blog-detail/${data.id}`} className="text-black 2xl:my-5 my-4 2xl:text-2xl md:text-xl text-lg leading-normal font-bold duration-300 hover:text-primary">{data.heading}</Link>
                 <TitleComponent size='base-medium' className='text-bodyColor overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical]'>{data.desc}</TitleComponent>

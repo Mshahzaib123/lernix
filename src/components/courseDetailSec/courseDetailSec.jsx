@@ -82,7 +82,7 @@ const CourseDetailSec = () => {
                                 {courseDetailData.map((item, index) => (
                                     <ul key={index} className="flex justify-between items-center md:pb-5 pb-4 border-b brder-b-solid border-b-whiteShade200">
                                         <li className="flex items-center gap-2">
-                                            <item.icon className='text-secondary' weight='bold' size={20} />
+                                            <item.icon className='text-primary' weight='bold' size={20} />
                                             <h6 className="text-black md:text-base text-sm font-medium">{item.title}</h6>
                                         </li>
                                         <li className="flex items-center gap-2">

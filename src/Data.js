@@ -224,13 +224,13 @@ export const testimonialData = [
         status: "Ex-Student"
     },
     {
-        stdReview: "Choosing LEARNIX for my data science journey was a game changer. The curriculum is up-to-date and covers the essentials with depth and clarity. The instructors truly care about your growth and make complex topics like machine learning approachable. I appreciated the mix of video lessons, coding labs, and capstone projects. It helped me practice while learning. The career coaching was outstanding—I landed a junior data analyst position shortly after graduating. LEARNIX gave me skills and confidence that truly made a difference.",
+        stdReview: "LEARNIX gave me the tools and confidence I needed to transition into web development. The content is modern, easy to follow, and packed with real examples. Instructors made difficult concepts feel manageable with constant guidance. I loved how each lesson built directly toward creating real-world projects. Their community and mentor support made me feel like I wasn’t alone. Before I finished the course, I had built a full portfolio and got a full-time role. I can’t thank LEARNIX enough for showing me what’s possible.",
         stdImg: './src/assets/testimonial6.webp',
         stdName: "Krystal France",
         status: "Ex-Student"
     },
     {
-        stdReview: "LEARNIX stood out from other platforms I tried before. The digital marketing course was packed with value—SEO, analytics, ads, and more. Each topic was broken down in a way that made it practical and easy to apply. The instructors were engaging and quick to help. Their project-based learning helped me build an impressive portfolio. Even before completing all modules, I secured a part-time role with a local agency. LEARNIX turned a casual interest into a promising career path. Highly recommended to anyone serious.",
+        stdReview: "LEARNIX gave me the tools and confidence I needed to transition into web development. The content is modern, easy to follow, and packed with real examples. Instructors made difficult concepts feel manageable with constant guidance. I loved how each lesson built directly toward creating real-world projects. Their community and mentor support made me feel like I wasn’t alone. Before I finished the course, I had built a full portfolio and got a full-time role. I can’t thank LEARNIX enough for showing me what’s possible.",
         stdImg: './src/assets/testimonial6.webp',
         stdName: "Krystal France",
         status: "Ex-Student"

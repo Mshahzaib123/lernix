@@ -19,7 +19,7 @@ import youtubeSvg from '../../assets/youtube.svg';
 import twitterSvg from '../../assets/twitter1.svg';
 import instagram2Svg from '../../assets/instagram2.svg';
 import lockSvg from '../../assets/lock.svg';
-import courseInstructor from '../../assets/courses35.webp';
+import courseInstructor from '../../assets/courses35.png';
 
 const TabsComponent = () => {
     const menuData = ["Overview", "Carriculum", "Instructor", "Reviews"];
@@ -96,7 +96,7 @@ const TabsComponent = () => {
                     <div className="grid md:gap-6 gap-5">
                         {courseContentData.map((item, index) => (
                             <div key={index}>
-                                <button className={`flex justify-between items-center w-full rounded xl:p-7 md:p-5 py-3.5 px-5 ${openAccordion === index ? "bg-secondary" : "bg-grey100"} duration-500`} onClick={() => toggleCollapse(index)}>
+                                <button className={`flex justify-between items-center w-full rounded xl:p-7 md:p-5 py-3.5 px-5 ${openAccordion === index ? "bg-primary" : "bg-grey100"} duration-500`} onClick={() => toggleCollapse(index)}>
                                     <div className='flex justify-start items-center gap-2'>
                                         <CaretDown className={`${openAccordion === index ? "text-whiteShade rotate-180" : "text-black"} duration-500`} weight='bold' size={18} />
                                         <h6 className={`${openAccordion === index ? "text-whiteShade" : "text-black"} duration-500 text-left md:text-lg sm:text-base text-sm font-semibold`}>{item.heading}</h6>
@@ -126,7 +126,7 @@ const TabsComponent = () => {
 
                                                     <div className="flex items-center gap-4">
                                                         {
-                                                            subItem.preview && <button className="bg-secondary py-1 px-4 rounded-sm text-whiteShade text-base leading-normal font-medium">Preview</button>
+                                                            subItem.preview && <button className="bg-primary py-1 px-4 rounded-sm text-whiteShade text-base leading-normal font-medium">Preview</button>
                                                         }
                                                         {
                                                             subItem.locked && <img className="max-w-6" src={lockSvg} alt="icon" />
@@ -169,34 +169,34 @@ const TabsComponent = () => {
                             </ul>
                             <ul className="flex items-center md:gap-8 gap-5 mt-6">
                                 <li>
-                                    <Link to="#" className="group">
+                                    <Link to="#">
                                         <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={facebookSvg} alt="" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="#" className="group">
+                                    <Link to="#">
                                         <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={linkedInSvg} alt="" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="#" className="group">
+                                    <Link to="#">
                                         <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={youtubeSvg} alt="" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="#" className="group">
+                                    <Link to="#">
                                         <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={instagram2Svg} alt="" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="#" className="group">
+                                    <Link to="#">
                                         <img className="max-w-6 duration-300 hover:-translate-y-2.5" src={twitterSvg} alt="" />
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <TitleComponent size='small-medium' className="md:mt-8 mt-5 text-bodyColor md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use Link passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend.</TitleComponent>
+                    <TitleComponent size='small-medium' className="md:mt-8 mt-5 text-bodyColor md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend.</TitleComponent>
                 </div>
                 <div className={`${toggle === menuData[3] ? "block" : "hidden"}`}>
                     <div className="flex justify-evenly items-center md:flex-row flex-col gap-3">
@@ -217,7 +217,7 @@ const TabsComponent = () => {
                                     <div className="flex items-center gap-2 md:justify-start justify-between w-full">
                                         <div className="relative">
                                             <div className="2xl:w-[420px] xl:w-[350px] lg:w-[320px] md:w-[300px] w-[250px] h-2 bg-grey100" />
-                                            <div className='absolute top-1/2 -translate-y-1/2 left-0 h-2 bg-secondary' style={{ width: `${item.percent}%` }} />
+                                            <div className='absolute top-1/2 -translate-y-1/2 left-0 h-2 bg-primary' style={{ width: `${item.percent}%` }} />
                                         </div>
                                         <TitleComponent size='small-semibold' className="text-bodyColor xl:text-lg md:text-base">{item.percent}%</TitleComponent>
                                     </div>

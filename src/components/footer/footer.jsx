@@ -34,8 +34,8 @@ const Footer = () => {
                             <ul className="flex items-center 2xl:gap-4 gap-5 2xl:mt-7 mt-5">
                                 {socialData.map((item, index) => (
                                     <li key={index}>
-                                        <Link to={item.path} className={`flex justify-center items-center 2xl:w-12 2xl:h-12 w-9 h-9 ${location.pathname === '/homepage2' ? 'bg-black' : 'bg-bodyColor'} rounded-full translate-y-0 duration-300 group hover:-translate-y-2.5 hover:bg-primary`}>
-                                            <item.icon className='text-whiteShade' weight='bold' size={22} />
+                                        <Link to={item.path} className={`relative flex justify-center items-center 2xl:w-12 2xl:h-12 w-9 h-9 ${location.pathname === '/homepage2' ? 'bg-black' : 'bg-bodyColor'} rounded-full translate-y-0 duration-300 group hover:-translate-y-2.5 hover:bg-primary`}>
+                                            <item.icon className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-whiteShade' weight='bold' size={22} />
                                         </Link>
                                     </li>
                                 ))}
@@ -82,7 +82,7 @@ const Footer = () => {
                         <ul className="flex xl:gap-x-10 lg:gap-x-8 gap-x-5">
                             {copyrightMenuData.map((item, index) => (
                                 <li key={index}>
-                                    <Link to={item.path} className="relative text-white xl:text-base text-sm font-medium after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-white after:bottom-0 after:left-0 after:duration-500 hover:after:w-full">{item.title}</Link>
+                                    <Link to={item.path} className="relative text-white xl:text-base text-sm font-medium after:content-[''] after:absolute after:w-0 after:h-px after:bg-white after:bottom-0 after:left-0 after:duration-500 hover:after:w-full">{item.title}</Link>
                                 </li>
                             ))}
                         </ul>

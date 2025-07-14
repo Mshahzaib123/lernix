@@ -7,7 +7,7 @@ const FunFactCard = ({ data }) => {
             <div className="relative flex justify-center items-center bg-whiteShade rounded-r-full xl:w-24 w-[70px] xl:h-24 h-[70px] z-[1]">
                 <img className="xl:max-w-12 max-w-8" src={data.image} alt="" />
             </div>
-            <div className="relative z-50">
+            <div className="relative z-20">
                 <TitleComponent type='h3' className='text-whiteShade text-2xl'>{data.strength}</TitleComponent>
                 <TitleComponent size='small-medium' className='text-whiteShade 2xl:text-lg xl:text-base'>{data.heading}</TitleComponent>
             </div>
