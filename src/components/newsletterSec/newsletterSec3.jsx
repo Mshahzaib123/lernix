@@ -25,8 +25,8 @@ const NewlstterSec3 = () => {
                     </div>
                     <img className='absolute top-8 left-8 w-36 h-36 lg:block hidden' src={newsletterImg1} alt="" />
                     <img className='absolute top-8 right-8 w-48 h-24 lg:block hidden' src={newsletterImg2} alt="" />
-                    <img className='absolute left-8 bottom-8 w-48 h-24 lg:block hidden' src={newsletterImg3} alt="" />
-                    <img className='absolute right-8 bottom-8 w-36 h-36 rounded-full lg:block hidden' src={newsletterImg4} alt="" />
+                    <img className='absolute bottom-8 left-8  w-48 h-24 lg:block hidden' src={newsletterImg3} alt="" />
+                    <img className='absolute bottom-8 right-8 w-36 h-36 rounded-full lg:block hidden' src={newsletterImg4} alt="" />
                 </div>
             </div>
         </section>

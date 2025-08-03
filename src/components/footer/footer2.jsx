@@ -6,9 +6,9 @@ import TitleComponent from '../titleComponent/titleComponent';
 import ThemeButton from '../themeButton/themeButton';
 import ThemeInput from '../themeInput/themeInput';
 
-import brandLogo from '../../assets/brand-logo-light.svg';
+import brandLogo from '../../assets/brand-logo-light-2.svg';
 import shape24 from '../../assets/shape24.webp';
-import navigationCircle from '../../assets/footer-navigation-circle.svg';
+import navigationCircle from '../../assets/footer-navigation-circle-2.svg';
 
 const Footer2 = () => {
     return (
@@ -21,13 +21,15 @@ const Footer2 = () => {
                         </Link>
                         <TitleComponent size="large-medium" className="2xl:mt-6 mt-5 mb-4 text-white">Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus.</TitleComponent>
                         <TitleComponent type='h4' className='text-white'>Follow Us</TitleComponent>
-                        <div className="flex items-center gap-4 flex-wrap 2xl:mt-5 mt-4">
+                        <ul className="flex items-center gap-4 flex-wrap 2xl:mt-5 mt-4">
                             {socialData.map((item, index) => (
-                                <Link key={index} to={item.path} className="flex justify-center items-center 2xl:w-10 2xl:h-10 w-9 h-9 bg-transparent border-1 border-solid boder-whiteShade rounded duration-300 group hover:bg-primary hover:-translate-y-2.5 hover:border-transparent">
-                                    <item.icon className='text-whiteShade' weight='bold' size={22} />
-                                </Link>
+                                <li key={index}>
+                                    <Link to={item.path} className="relative flex justify-center items-center 2xl:w-10 2xl:h-10 w-9 h-9 bg-transparent border-1 border-solid boder-whiteShade rounded duration-300 group hover:bg-primary hover:-translate-y-2.5 hover:border-transparent">
+                                        <item.icon className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-whiteShade' weight='bold' size={22} />
+                                    </Link>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
                     </div>
                     <div className="lg:col-span-1 md:col-span-2 sm:col-span-2 col-span-4">
                         {footerServicesData.map((item, index) => (
@@ -85,7 +87,7 @@ const Footer2 = () => {
                                 required={true}
                                 icon={EnvelopeSimple}
                             />
-                            <ThemeButton variant="solid" theme="primary2" text="Submit Now" className="w-fit" />
+                            <ThemeButton variant="solid" theme="primary3" text="Submit Now" className="w-fit" />
                         </form>
                     </div>
                 </div>

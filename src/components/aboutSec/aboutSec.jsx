@@ -24,14 +24,14 @@ const AboutSec = () => {
                     <div className="relative lg:w-1/2">
                         <div className="flex gap-6 sm:flex-row flex-col">
                             <div className="sm:w-1/2 relative z-[2]">
-                                <div className="sm:ml-10 ml-0 mb-6">
+                                <div className="sm:ml-10 mb-6">
                                     <img className="xl:max-w-56 lg:max-w-full w-full rounded-xl" src={aboutImg1} alt="" />
                                 </div>
                                 <div>
                                     <img className="xl:max-w-[264px] lg:max-w-full w-full rounded-xl" src={aboutImg2} alt="" />
                                 </div>
                             </div>
-                            <div className="sm:w-1/2 relative z-[2] flex flex-col justify-end">
+                            <div className="relative sm:w-1/2 z-[2] flex flex-col justify-start">
                                 <div className="sm:mt-12 mt-0 2xl:-ml-9 ml-0 mb-6">
                                     <img className="2xl:max-w-80 sm:max-w-full w-full rounded-xl" src={aboutImg3} alt="" />
                                 </div>
@@ -41,15 +41,13 @@ const AboutSec = () => {
                                         <TitleComponent size='large-medium' className='text-whiteShade'>years experience</TitleComponent>
                                     </div>
                                     <div className="cursor-pointer">
-                                        <ArrowRight className='text-whiteShade transform -rotate-45 duration-300 group-hover:text-black group-hover:rotate-0' size={36} />
+                                        <ArrowRight className='text-whiteShade -rotate-45 duration-300 group-hover:text-black group-hover:rotate-0' size={36} />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <img className="absolute top-5 2xl:-left-12 -left-2.5 animate-rotateMe2 sm:block hidden" src={aboutShape1} alt="About Shape" />
-
-                        <img className="absolute top-2 2xl:left-[308px] left-[395px] sm:block hidden animate-moveBg" src={aboutShape2} alt="About Shape" />
-
+                        <img className="absolute -top-3 2xl:left-[308px] left-[395px] sm:block hidden animate-moveBg" src={aboutShape2} alt="About Shape" />
                     </div>
                     <div className="lg:w-1/2 2xl:ml-10 xl:ml-5 ml-0">
                         <SectionTitle

@@ -19,12 +19,12 @@ const NewsletterSec = () => {
                             <TitleComponent type='h3' className='text-whiteShade md:text-left text-center'>Enter Your email To Subscribe Our Newsletter</TitleComponent>
                         </div>
                         <ThemeInput
-                            type={"email"}
-                            name={"email"}
-                            id={"email"}
-                            placeholder={"Write your email"}
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Write your email"
                             required={true}
-                            buttonText={"Subscribe"}
+                            buttonText="Subscribe"
                             icon={EnvelopeSimple} className='lg:w-1/2'
                         />
                     </div>

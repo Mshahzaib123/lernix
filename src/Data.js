@@ -1,27 +1,134 @@
 import { FacebookLogo, GoogleLogo, XLogo, LinkedinLogo, StarHalf, MapPin, Envelope, Phone, UserRectangle, FileText, Clock, Star, Medal, Globe } from '@phosphor-icons/react';
 
-import FunFact1 from './assets/funfact1.svg';
-import FunFact2 from './assets/funfact2.svg';
-import FunFact3 from './assets/funfact3.svg';
-import FunFact4 from './assets/funfact4.svg';
+import funFact from './assets/funfact1.webp';
+import FunFact1 from './assets/funfact1-2.svg';
+import FunFact2 from './assets/funfact2-2.svg';
+import FunFact3 from './assets/funfact3-2.svg';
+import FunFact4 from './assets/funfact4-2.svg';
+
 import checSvg from './assets/check.svg';
-import quoteSvg1 from './assets/quote1.svg';
+import quoteSvg1 from './assets/quote1-2.svg';
 import quoteSvg2 from './assets/quote2.svg';
 import quoteSvg3 from './assets/quote3.svg';
+
 import partner1 from './assets/partner1.svg';
 import partner2 from './assets/partner2.svg';
 import partner3 from './assets/partner3.svg';
 import partner4 from './assets/partner4.svg';
 import partner5 from './assets/partner5.svg';
+
 import category1 from './assets/categories1.svg';
 import category2 from './assets/categories2.svg';
 import category3 from './assets/categories3.svg';
 import category4 from './assets/categories4.svg';
 import category5 from './assets/categories5.svg';
 import category6 from './assets/categories6.svg';
+
 import videoSvg from './assets/video.svg';
+import fbSvg from './assets/fb.svg';
+import twitterSvg from './assets/twitter.svg';
+import linkedInSvg from './assets/linkedin.svg';
+import instagramSvg from './assets/instragram.svg';
 import headphoneSvg from './assets/headphone.svg';
 import documentSvg from './assets/document.svg';
+
+import user1 from './assets/user1.webp';
+import user2 from './assets/user2.webp';
+import user3 from './assets/user3.webp';
+import user4 from './assets/user4.webp';
+import user5 from './assets/user5.webp';
+import user6 from './assets/user6.webp';
+import user7 from './assets/user7.webp';
+import user8 from './assets/user8.webp';
+
+import testimonial6 from './assets/testimonial6.webp';
+import testimonial8 from './assets/testimonial8.webp';
+import testimonial9 from './assets/testimonial9.webp';
+import testimonial10 from './assets/testimonial10.webp';
+import testimonial11 from './assets/testimonial11.webp';
+import testimonial12 from './assets/testimonial12.webp';
+
+import blog1 from './assets/blog1.webp';
+import blog3 from './assets/blog3.webp';
+import blog4 from './assets/blog4.webp';
+import blog5 from './assets/blog5.webp';
+import blog6 from './assets/blog6.webp';
+import blog7 from './assets/blog7.webp';
+import blog8 from './assets/blog8.webp';
+import blog9 from './assets/blog9.webp';
+import blog10 from './assets/blog10.webp';
+import blog11 from './assets/blog11.webp';
+import blog12 from './assets/blog12.webp';
+import blog13 from './assets/blog13.webp';
+import blog14 from './assets/blog14.webp';
+import blog15 from './assets/blog15.webp';
+import blog16 from './assets/blog16.webp';
+import blog17 from './assets/blog17.webp';
+import blog18 from './assets/blog18.webp';
+import blog19 from './assets/blog19.webp';
+import blog20 from './assets/blog20.webp';
+import blog21 from './assets/blog21.webp';
+import blog22 from './assets/blog22.webp';
+import blog23 from './assets/blog23.webp';
+import blog24 from './assets/blog24.webp';
+import blog25 from './assets/blog25.webp';
+import blog26 from './assets/blog26.webp';
+import blog31 from './assets/blog31.webp';
+import blog32 from './assets/blog32.webp';
+import blog33 from './assets/blog33.webp';
+
+import course1 from './assets/courses1.webp';
+import course3 from './assets/courses3.webp';
+import course4 from './assets/courses4.webp';
+import course5 from './assets/courses5.webp';
+import course6 from './assets/courses6.webp';
+import course7 from './assets/courses7.webp';
+import course8 from './assets/courses8.webp';
+import course9 from './assets/courses9.webp';
+import course10 from './assets/courses10.webp';
+import course11 from './assets/courses11.webp';
+import course12 from './assets/courses12.webp';
+import course13 from './assets/courses13.webp';
+import course14 from './assets/courses14.webp';
+import course15 from './assets/courses15.webp';
+import course16 from './assets/courses16.webp';
+import course17 from './assets/courses17.webp';
+import course18 from './assets/courses18.webp';
+import course20 from './assets/courses20.webp';
+import course21 from './assets/courses21.webp';
+import course22 from './assets/courses22.webp';
+import course23 from './assets/courses23.webp';
+import course24 from './assets/courses24.webp';
+import course25 from './assets/courses25.webp';
+import course26 from './assets/courses26.webp';
+import course27 from './assets/courses27.webp';
+import course28 from './assets/courses28.webp';
+import course32 from './assets/courses32.webp';
+import course33 from './assets/courses33.webp';
+import course34 from './assets/courses34.webp';
+import courseUser1 from './assets/courses-user1.webp';
+import courseUser2 from './assets/courses-user2.webp';
+import courseUser3 from './assets/courses-user3.webp';
+import courseUser4 from './assets/courses-user4.webp';
+import courseUser5 from './assets/courses-user5.webp';
+import courseUser6 from './assets/courses-user6.webp';
+import courseUser7 from './assets/courses37.webp';
+import courseUser8 from './assets/courses38.webp';
+
+import team1 from './assets/team1.webp';
+import team2 from './assets/team2.webp';
+import team4 from './assets/team4.webp';
+import team5 from './assets/team5.webp';
+import team6 from './assets/team6.webp';
+import team7 from './assets/team7.webp';
+import team8 from './assets/team8.webp';
+import team9 from './assets/team9.webp';
+import team10 from './assets/team10.webp';
+import team11 from './assets/team11.webp';
+import team12 from './assets/team12.webp';
+import team13 from './assets/team13.webp';
+import team14 from './assets/team14.webp';
+import team15 from './assets/team15.webp';
 
 export const menuData = [
     {
@@ -50,7 +157,7 @@ export const menuData = [
         dropdown: [
             { title: "Courses List", path: "/courses-list-view" },
             { title: "Courses Grid", path: "/courses-grid-view" },
-            { title: "Courses Detail", path: "/courses-detail" },
+            { title: "Courses Details", path: "/courses-detail" },
             { title: "Courses With Sidebar", path: "/courses-with-sidebar" },
         ]
     },
@@ -69,7 +176,7 @@ export const menuData = [
         path: "/contact-us"
     }
 
-]
+];
 
 export const footerNavigationData = [
     {
@@ -92,7 +199,7 @@ export const footerNavigationData = [
             { title: "Licensencing", path: "/license" },
         ]
     }
-]
+];
 
 export const footerServicesData = [
     {
@@ -105,7 +212,7 @@ export const footerServicesData = [
             { title: "Home Maintenance", path: "/" },
         ]
     }
-]
+];
 
 export const footerContactData = [
     {
@@ -116,31 +223,33 @@ export const footerContactData = [
             { icon: Phone, label: "Phone", title: "+1 234 5678 900", path: "/" },
         ]
     }
-]
+];
 
 export const copyrightMenuData = [
     { title: "Company", path: "/" },
     { title: "Support", path: "/" },
-    { title: "Privacy", path: "/" },
-    { title: "Conatct", path: "/" }
-]
+    { title: "Privacy", path: "/privacy-policy" },
+    { title: "Contact", path: "/contact-us" }
+];
 
 export const socialData2 = [
     {
-        icon: "../src/assets/fb.svg",
+        icon: fbSvg,
         path: "/",
     },
     {
-        icon: "../src/assets/twitter.svg",
-        path: "/",
-    }, {
-        icon: "../src/assets/linkedin.svg",
-        path: "/",
-    }, {
-        icon: "../src/assets/instragram.svg",
+        icon: twitterSvg,
         path: "/",
     },
-]
+    {
+        icon: linkedInSvg,
+        path: "/",
+    },
+    {
+        icon: instagramSvg,
+        path: "/",
+    },
+];
 
 export const socialData = [
     {
@@ -159,7 +268,7 @@ export const socialData = [
         icon: GoogleLogo,
         path: "/",
     },
-]
+];
 
 export const awardData = [
     {
@@ -182,24 +291,24 @@ export const awardData = [
         icon: checSvg,
         text: "Life-changing digital education"
     },
-]
+];
 
 export const userProfileData = [
-    { img: './src/assets/user1.webp', text: "img" },
-    { img: './src/assets/user2.webp', text: "img" },
-    { img: './src/assets/user3.webp', text: "img" },
-    { img: './src/assets/user4.webp', text: "img" },
-    { img: './src/assets/user5.webp', text: "img" },
-    { img: './src/assets/user6.webp', text: "img" },
-    { img: './src/assets/user7.webp', text: "img" },
-    { img: './src/assets/user8.webp', text: "img" },
-]
+    { img: user1, text: "img" },
+    { img: user2, text: "img" },
+    { img: user3, text: "img" },
+    { img: user4, text: "img" },
+    { img: user5, text: "img" },
+    { img: user6, text: "img" },
+    { img: user7, text: "img" },
+    { img: user8, text: "img" },
+];
 
 export const progressBarData = [
     { skill: "Skill Mastery Levels", percent: "90%" },
     { skill: "Learning Milestones", percent: "92%" },
     { skill: "Digital Proficiency Journey", percent: "92%" },
-]
+];
 
 export const CategoryData = [
     { image: category1, heading: "Web Design", course: "78 Courses" },
@@ -208,35 +317,35 @@ export const CategoryData = [
     { image: category4, heading: "Software Developement", course: "48 Courses" },
     { image: category5, heading: "Graphic Design", course: "18 Courses" },
     { image: category6, heading: "Network Administration", course: "48 Courses" },
-]
+];
 
 export const testimonialData = [
     {
-        stdReview: "Choosing LEARNIX was the best decision I made for my career. The courses are informative, engaging, and industry-relevant. The instructors provide excellent support, ensuring I understood every concept. Their practical teaching approach helped me gain confidence in my abilities. I landed my dream job before course completion! The experience was incredible, and I highly recommend Edugen to anyone looking to advance their digital career with the right skills.",
-        stdImg: './src/assets/testimonial6.webp',
+        stdReview: "LEARNIX gave me the tools and confidence I needed to transition into web development. The content is modern, easy to follow, and packed with real examples. Instructors made difficult concepts feel manageable with constant guidance. I loved how each lesson built directly toward creating real-world projects. Their community and mentor support made me feel like I wasn’t alone. Before I finished the course, I had built a full portfolio and got a full-time role. I can’t thank LEARNIX enough for showing me what’s possible.",
+        stdImg: testimonial6,
         stdName: "Krystal France",
         status: "Ex-Student"
     },
     {
-        stdReview: "Enrolling in LEARNIX was a life-changing decision. The courses are well-structured, and the instructors are incredibly supportive. They provide step-by-step guidance, ensuring every concept is understood. Thanks to their expert mentorship, I landed a job in my desired field before completing the course. The learning process was smooth, engaging, and practical. I highly recommend Edugen to anyone looking to upskill and advance their career in the digital world.",
-        stdImg: './src/assets/testimonial6.webp',
+        stdReview: "LEARNIX gave me the tools and confidence I needed to transition into web development. The content is modern, easy to follow, and packed with real examples. Instructors made difficult concepts feel manageable with constant guidance. I loved how each lesson built directly toward creating real-world projects. Their community and mentor support made me feel like I wasn’t alone. Before I finished the course, I had built a full portfolio and got a full-time role. I can’t thank LEARNIX enough for showing me what’s possible.",
+        stdImg: testimonial6,
         stdName: "Krystal France",
         status: "Ex-Student"
     },
     {
-        stdReview: "LEARNIX courses exceeded my expectations! The instructors are knowledgeable, patient, and dedicated to student success. The curriculum is well-designed, with real-world applications. I felt confident learning new skills, and the support I received was outstanding. I secured an amazing job before finishing my course. The experience was truly rewarding, and I encourage anyone wanting to improve their digital expertise to join Edugen. It’s the best investment for your future!",
-        stdImg: './src/assets/testimonial6.webp',
+        stdReview: "LEARNIX gave me the tools and confidence I needed to transition into web development. The content is modern, easy to follow, and packed with real examples. Instructors made difficult concepts feel manageable with constant guidance. I loved how each lesson built directly toward creating real-world projects. Their community and mentor support made me feel like I wasn’t alone. Before I finished the course, I had built a full portfolio and got a full-time role. I can’t thank LEARNIX enough for showing me what’s possible.",
+        stdImg: testimonial6,
         stdName: "Krystal France",
         status: "Ex-Student"
     },
-]
+];
 
 export const testimonial2Data = [
     {
         quoteSvg: quoteSvg1,
         heading: "The Best Online Course Provider",
         desc: "Enrolling in courses at LEARNIX was a game-changer for me. The instructors' expertise and personalized support helped me transition smoothly into the digital",
-        profileImg: './src/assets/testimonial8.webp',
+        profileImg: testimonial8,
         userName: "Jean Grey",
         status: "Ex-Student"
     },
@@ -244,7 +353,7 @@ export const testimonial2Data = [
         quoteSvg: quoteSvg2,
         heading: "The Best Online Course Provider",
         desc: "Enrolling in courses at LEARNIX was a game-changer for me. The instructors' expertise and personalized support helped me transition smoothly into the digital",
-        profileImg: './src/assets/testimonial9.webp',
+        profileImg: testimonial9,
         userName: "Lillie R. Cherry",
         status: "Ex-Student"
     },
@@ -252,7 +361,7 @@ export const testimonial2Data = [
         quoteSvg: quoteSvg2,
         heading: "The Best Online Course Provider",
         desc: "Enrolling in courses at LEARNIX was a game-changer for me. The instructors' expertise and personalized support helped me transition smoothly into the digital",
-        profileImg: './src/assets/testimonial10.webp',
+        profileImg: testimonial10,
         userName: "Morgan Stark",
         status: "Ex-Student"
     },
@@ -260,7 +369,7 @@ export const testimonial2Data = [
         quoteSvg: quoteSvg1,
         heading: "The Best Online Course Provider",
         desc: "Enrolling in courses at LEARNIX was a game-changer for me. The instructors' expertise and personalized support helped me transition smoothly into the digital",
-        profileImg: './src/assets/testimonial11.webp',
+        profileImg: testimonial11,
         userName: "Erik Lansher",
         status: "Ex-Student"
     },
@@ -268,17 +377,17 @@ export const testimonial2Data = [
         quoteSvg: quoteSvg3,
         heading: "The Best Online Course Provider",
         desc: "Enrolling in courses at LEARNIX was a game-changer for me. The instructors' expertise and personalized support helped me transition smoothly into the digital",
-        profileImg: './src/assets/testimonial12.webp',
+        profileImg: testimonial12,
         userName: "Scott Summers",
         status: "Ex-Student"
     },
-]
+];
 
 export const simpleBlogData = [
     {
         id: 'essential-skills',
         path: "/blog-detail",
-        blogImg: '../src/assets/blog1.webp',
+        blogImg: blog1,
         user: "Admin",
         datePosted: "Jan 29, 2022",
         heading: "5 Essential Skills Every Digital Marketer Should Master"
@@ -286,7 +395,7 @@ export const simpleBlogData = [
     {
         id: 'graphic-design-trend',
         path: "/blog-detail",
-        blogImg: '../src/assets/blog2.webp',
+        blogImg: blog3,
         user: "Admin",
         datePosted: "May 13, 2022",
         heading: "Graphic Design Trends Shaping Visual Communication"
@@ -294,18 +403,18 @@ export const simpleBlogData = [
     {
         id: 'navigating-the-data',
         path: "/blog-detail",
-        blogImg: '../src/assets/blog3.webp',
+        blogImg: blog3,
         user: "Admin",
         datePosted: "Aug 05, 2022",
         heading: "Navigating the Data Science Job Market"
     },
-]
+];
 
 export const newsData = [
     {
         id: 'web-development-tools',
         path: "/blog-detail",
-        blogImg: '../src/assets/blog4.webp',
+        blogImg: blog4,
         user: "Admin",
         datePosted: "04 April, 2024",
         heading: "Top 10 Web Development Tools You Should Be Using in 2024",
@@ -314,13 +423,13 @@ export const newsData = [
     {
         id: 'essential-cyber-security',
         path: "/blog-detail",
-        blogImg: '../src/assets/blog5.webp',
+        blogImg: blog5,
         user: "Admin",
         datePosted: "10 May, 2024",
         heading: "Essential Cybersecurity Practices for Protecting Your Online",
         comment: "05"
     },
-]
+];
 
 export const categoryBlogData = [
     {
@@ -328,7 +437,7 @@ export const categoryBlogData = [
         path: "/blog-detail",
         heading: "Top 5 Programming Languages to Learn for a Thriving Tech Career",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
-        blogImg: '../src/assets/blog6.webp',
+        blogImg: blog6,
         datePosted: "June 4, 2024",
         field: "Technical"
     },
@@ -337,7 +446,7 @@ export const categoryBlogData = [
         path: "/blog-detail",
         heading: "The Ultimate Guide to Boosting Your SEO in 2024",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
-        blogImg: '../src/assets/blog7.webp',
+        blogImg: blog7,
         datePosted: "September 22, 2024",
         field: "Technical"
     },
@@ -346,18 +455,18 @@ export const categoryBlogData = [
         path: "/blog-detail",
         heading: "Leveraging Social Media Analytics for Business Growth",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
-        blogImg: '../src/assets/blog8.webp',
+        blogImg: blog8,
         datePosted: "November 10, 2024",
         field: "Technical"
     },
-]
+];
 
 export const categoryBlogData2 = [
     {
         id: 'co-education',
         category: "Education",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog9.webp',
+        blogImg: blog9,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "Co-Education Makes You Respect The People",
@@ -367,7 +476,7 @@ export const categoryBlogData2 = [
         id: 'professional-ceramic',
         category: "Education",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog10.webp',
+        blogImg: blog10,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "Professional Ceramic Maudling for Beginners",
@@ -377,7 +486,7 @@ export const categoryBlogData2 = [
         id: 'education-is-about-create-leader',
         category: "Learning",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog11.webp',
+        blogImg: blog11,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "Education Is About Create Leaders For Tomorrow",
@@ -387,7 +496,7 @@ export const categoryBlogData2 = [
         id: 'education-makes-a-door',
         category: "Business",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog12.webp',
+        blogImg: blog12,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "Education Makes A Door To Bright Future",
@@ -397,7 +506,7 @@ export const categoryBlogData2 = [
         id: 'education-is-best-friend',
         category: "Business",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog13.webp',
+        blogImg: blog13,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "Education Is A Best Friend Goes Lifelong",
@@ -407,7 +516,7 @@ export const categoryBlogData2 = [
         id: 'professional-mobile-painting',
         category: "Business",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog14.webp',
+        blogImg: blog14,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "Professional Mobile Painting and Sculpting",
@@ -417,7 +526,7 @@ export const categoryBlogData2 = [
         id: 'you-have-to-learn',
         category: "Business",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog15.webp',
+        blogImg: blog15,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "You Have To Learn If You Want To Earn",
@@ -427,7 +536,7 @@ export const categoryBlogData2 = [
         id: 'education-is-most-powerful-tool',
         category: "Business",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog16.webp',
+        blogImg: blog16,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "Education Is The Most Powerful Tool",
@@ -437,19 +546,19 @@ export const categoryBlogData2 = [
         id: 'essential-tips-for-building',
         category: "Business",
         path: "/blog-detail",
-        blogImg: '../src/assets/blog26.webp',
+        blogImg: blog26,
         user: "Admin",
         datePosted: "Jan 29, 2024",
         heading: "Essential Tips for Building a Responsive Web Design",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took"
     },
 
-]
+];
 
 export const coursesData = [
     {
         id: 'introduction-to-digital-marketing',
-        img: '../src/assets/courses1.webp',
+        img: course1,
         level: "Beginner",
         price: "$27.00",
         heading: "Introduction to Digital Marketing",
@@ -477,13 +586,13 @@ export const coursesData = [
                 style: "fill"
             },
         ],
-        instructorImg: '../src/assets/courses-user1.webp',
+        instructorImg: courseUser1,
         instructorName: "Prof. Donnie Ball",
         strength: "70+",
     },
     {
         id: 'increasing-engagement-with-instagram-and-facebook',
-        img: '../src/assets/courses8.webp',
+        img: course8,
         level: "Intermediate",
         price: "$33.00",
         heading: "Increasing Engagement with Instagagram & Facebook",
@@ -511,13 +620,13 @@ export const coursesData = [
                 style: "fill"
             },
         ],
-        instructorImg: '../src/assets/courses-user2.webp',
+        instructorImg: courseUser2,
         instructorName: "Prof. Angela Bryant",
         strength: "1.5k+",
     },
     {
         id: 'full-stack-web-development',
-        img: '../src/assets/courses3.webp',
+        img: course3,
         level: "Beginner",
         price: "$26.00",
         heading: "Full Stack Web Development Bootcamp",
@@ -545,13 +654,13 @@ export const coursesData = [
                 style: "fill"
             },
         ],
-        instructorImg: '../src/assets/courses-user3.webp',
+        instructorImg: courseUser3,
         instructorName: "Prof. Vivian Farney",
         strength: "5k+",
     },
     {
         id: 'mastering-digital-marketing',
-        img: '../src/assets/courses4.webp',
+        img: course4,
         level: "Beginner",
         price: "$47.00",
         heading: "Mastering Digital Marketing Fundamentals",
@@ -579,13 +688,13 @@ export const coursesData = [
                 style: "fill"
             },
         ],
-        instructorImg: '../src/assets/courses-user4.webp',
+        instructorImg: courseUser4,
         instructorName: "Prof. Ralph Lyon",
         strength: "1.7k+",
     },
     {
         id: 'python-programming-for-beginners',
-        img: '../src/assets/courses5.webp',
+        img: course5,
         level: "Beginner",
         price: "$55.00",
         heading: "Python Programming for Beginners",
@@ -613,13 +722,13 @@ export const coursesData = [
                 style: "fill"
             },
         ],
-        instructorImg: '../src/assets/courses-user5.webp',
+        instructorImg: courseUser5,
         instructorName: "Prof. Betty Ortegal",
         strength: "5k+",
     },
     {
         id: 'graphic-design-mastery',
-        img: '../src/assets/courses6.webp',
+        img: course6,
         level: "Beginner",
         price: "$37.00",
         heading: "Graphic Design Mastery: From Concept to Creation",
@@ -647,17 +756,17 @@ export const coursesData = [
                 style: "fill"
             },
         ],
-        instructorImg: '../src/assets/courses-user6.webp',
+        instructorImg: courseUser6,
         instructorName: "Prof. Scott Stevens",
         strength: "2.3k+",
     },
 
-]
+];
 
 export const coursesListData = [
     {
         id: 'basic-fundamentals-of-interior-design',
-        img: '../src/assets/courses13.webp',
+        img: course13,
         price: "Free",
         heading: "Basic Fundamentals of Interior & Graphics Design",
         path: "/courses-detail",
@@ -688,7 +797,7 @@ export const coursesListData = [
     },
     {
         id: 'increasing-engagement-with-instagram-and-facebook',
-        img: '../src/assets/courses14.webp',
+        img: course14,
         price: "$24.33",
         heading: "Increasing Engagement with Instagram & Facebook",
         path: "/courses-detail",
@@ -719,7 +828,7 @@ export const coursesListData = [
     },
     {
         id: 'introduction-to-color-theory-and-basic-UI-UX',
-        img: '../src/assets/courses15.webp',
+        img: course15,
         price: "$39.99",
         heading: "Introduction to Color Theory & Basic UI/UX",
         path: "/courses-detail",
@@ -750,7 +859,7 @@ export const coursesListData = [
     },
     {
         id: 'financial-security-thinking-and-principles-theory',
-        img: '../src/assets/courses16.webp',
+        img: course16,
         price: "$32.15",
         heading: "Financial Security Thinking and Principles Theory",
         path: "/courses-detail",
@@ -781,7 +890,7 @@ export const coursesListData = [
     },
     {
         id: 'logo-design-from-concept-to-presentation',
-        img: '../src/assets/courses17.webp',
+        img: course17,
         price: "$37.88",
         heading: "Logo Design: From Concept to Presentation",
         path: "/courses-detail",
@@ -812,7 +921,7 @@ export const coursesListData = [
     },
     {
         id: 'professional-ceramic-molding-for-beginners',
-        img: '../src/assets/courses18.webp',
+        img: course18,
         price: "$41.80",
         heading: "Professional Ceramic Molding for Beginners",
         path: "/courses-detail",
@@ -843,7 +952,7 @@ export const coursesListData = [
     },
     {
         id: 'complete-guide-digital-markteting',
-        img: '../src/assets/courses25.webp',
+        img: course25,
         price: "$37.88",
         heading: "The Complete Guide Digital Marketing Course",
         path: "/courses-detail",
@@ -874,7 +983,7 @@ export const coursesListData = [
     },
     {
         id: 'facebook-ads-and-facebook-marketing-mastery',
-        img: '../src/assets/courses26.webp',
+        img: course26,
         price: "$41.80",
         heading: "Facebook Ads & Facebook Marketing MASTERY",
         path: "/courses-detail",
@@ -905,7 +1014,7 @@ export const coursesListData = [
     },
     {
         id: 'ultimate-google-ads-training-2021-pay-per-click',
-        img: '../src/assets/courses27.webp',
+        img: course27,
         price: "$37.88",
         heading: "Ultimate Google Ads Training 2021 Pay Per Click",
         path: "/courses-detail",
@@ -936,7 +1045,7 @@ export const coursesListData = [
     },
     {
         id: 'learn-complete-guide-to-instagram-growth',
-        img: '../src/assets/courses28.webp',
+        img: course28,
         price: "$41.80",
         heading: "Learn Complete Guide To Instagram Growth",
         path: "/courses-detail",
@@ -965,12 +1074,12 @@ export const coursesListData = [
         lessons: "2",
         strength: "4k"
     },
-]
+];
 
 export const featuredCoursesData = [
     {
         id: 'basic-fundamentals-of-interior-and-graphic-design',
-        img: '../src/assets/courses7.webp',
+        img: course7,
         heading: "Basic Fundamentals of Interior & Graphics Design",
         path: "/courses-detail",
         price: "$24.99",
@@ -981,7 +1090,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'increasing-engagement-with-instagram-and-facebook',
-        img: '../src/assets/courses8.webp',
+        img: course8,
         heading: "Increasing Engagement with Instagram & Facebook",
         path: "/courses-detail",
         price: "Free",
@@ -992,7 +1101,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'introduction-to-color-theory-and-basic-UI-UX',
-        img: '../src/assets/courses9.webp',
+        img: course9,
         heading: "Introduction to Color Theory & Basic UI/UX",
         path: "/courses-detail",
         price: "$41.25",
@@ -1003,7 +1112,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'financial-security-thinking-and-principles-theory',
-        img: '../src/assets/courses9.webp',
+        img: course10,
         heading: "Financial Security Thinking and Principles Theory",
         path: "/courses-detail",
         price: "$24.99",
@@ -1014,7 +1123,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'logo-design-from-concept-to-presentation',
-        img: '../src/assets/courses11.webp',
+        img: course11,
         heading: "Logo Design: From Concept to Presentation",
         path: "/courses-detail",
         price: "$38.48",
@@ -1025,7 +1134,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'professional-ceramic-molding-for-beginners',
-        img: '../src/assets/courses12.webp',
+        img: course12,
         heading: "Professional Ceramic Molding for Beginners",
         path: "/courses-detail",
         price: "$19.48",
@@ -1036,7 +1145,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'data-science-and-machine-learning-bootcamp',
-        img: '../src/assets/courses20.webp',
+        img: course20,
         heading: "Data Science and Machine Learning Bootcamp",
         path: "/courses-detail",
         price: "$39.28",
@@ -1047,7 +1156,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'hands-on-machine-learning-in-data-science',
-        img: '../src/assets/courses21.webp',
+        img: course21,
         heading: "Hands-On Machine Learning In Data Science",
         path: "/courses-detail",
         price: "$39.28",
@@ -1058,7 +1167,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'flutter-and-dart-the-complete-guide-2024-edition',
-        img: '../src/assets/courses22.webp',
+        img: course22,
         heading: "Flutter & Dart - The Complete Guide [2024 Edition]",
         path: "/courses-detail",
         price: "$19.48",
@@ -1069,7 +1178,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'financial-security-thinking-and-principles-theory',
-        img: '../src/assets/courses10.webp',
+        img: course10,
         heading: "Financial Security Thinking and Principles Theory",
         path: "/courses-detail",
         price: "$24.99",
@@ -1080,7 +1189,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'ultimate-aws-certified-solutions-architect-associate',
-        img: '../src/assets/courses23.webp',
+        img: course23,
         heading: "Ultimate AWS Certified Solutions Architect Associate",
         path: "/courses-detail",
         price: "$39.28",
@@ -1091,7 +1200,7 @@ export const featuredCoursesData = [
     },
     {
         id: 'complete-digital-marketing-course-12-courses-in-1',
-        img: '../src/assets/courses24.webp',
+        img: course24,
         heading: "Complete Digital Marketing Course - 12 Courses in 1",
         path: "/courses-detail",
         price: "$19.48",
@@ -1100,146 +1209,145 @@ export const featuredCoursesData = [
         runtime: "2h 30m",
         rating: "4.8"
     },
-
-]
+];
 
 export const lecturersData = [
     {
         id: 'tim-r-moyer',
-        img: '../src/assets/team1.webp',
+        img: team1,
         name: "Tim R. Moyer",
         path: "/team-detail",
         designation: "Lecturer"
     },
     {
         id: 'harold-j-eakes',
-        img: '../src/assets/team2.webp',
+        img: team2,
         name: "Harold J. Eakes",
         path: "/team-detail",
         designation: "Lecturer"
     },
     {
         id: 'ruth-r-scott',
-        img: '../src/assets/team1.webp',
+        img: team1,
         name: "Ruth R. Scott",
         path: "/team-detail",
         designation: "Lecturer"
     },
     {
         id: 'cheryl-j-solomon',
-        img: '../src/assets/team12.webp',
+        img: team12,
         name: "Cheryl J. Solomon",
         path: "/team-detail",
         designation: "Lecturer"
     },
     {
         id: 'julia-b-corbin',
-        img: '../src/assets/team13.webp',
+        img: team13,
         name: "Julia B. Corbin",
         path: "/team-detail",
         designation: "Lecturer"
     },
     {
         id: 'adrian-v-ginsberg',
-        img: '../src/assets/team14.webp',
+        img: team14,
         name: "Adrian V. Ginsberg",
         path: "/team-detail",
         designation: "Lecturer"
     },
     {
         id: 'daniel-c-almonte',
-        img: '../src/assets/team15.webp',
+        img: team15,
         name: "Daniel C. Almonte",
         path: "/team-detail",
         designation: "Lecturer"
     }
-]
+];
 
 export const instructorsData = [
     {
         id: 'troy-a-miller',
-        img: '../src/assets/team8.webp',
+        img: team8,
         name: "Troy A. Miller",
         path: "/team-detail",
         designation: "Instructor"
     },
     {
         id: 'michael-d-cornelius',
-        img: '../src/assets/team9.webp',
+        img: team9,
         name: "Michel D. Cornelius",
         path: "/team-detail",
         designation: "Instructor"
     },
     {
         id: 'george-a-cambell',
-        img: '../src/assets/team10.webp',
+        img: team10,
         name: "George A. Cambell",
         path: "/team-detail",
         designation: "Instructor"
     },
     {
         id: 'grace-r-sandoval',
-        img: '../src/assets/team11.webp',
+        img: team11,
         name: "Grace R. Sandoval",
         path: "/team-detail",
         designation: "Instructor"
     },
     {
         id: 'karl-clarkson',
-        img: '../src/assets/team4.webp',
+        img: team4,
         name: "Karl Clarkson",
         path: "/team-detail",
         designation: "Instructor"
     },
     {
         id: 'gloria-bush',
-        img: '../src/assets/team5.webp',
+        img: team5,
         name: "Gloria Bush",
         path: "/team-detail",
         designation: "Instructor"
     },
     {
         id: 'teresa-ransom',
-        img: '../src/assets/team6.webp',
+        img: team6,
         name: "Teresa Ransom",
         path: "/team-detail",
         designation: "Instructor"
     },
     {
         id: 'debra-webster',
-        img: '../src/assets/team7.webp',
+        img: team7,
         name: "Debra Webster",
         path: "/team-detail",
         designation: "Instructor"
     }
-]
+];
 
 export const funFactData = [
     {
-        bgImage: './src/assets/funfact1.webp',
+        bgImage: funFact,
         image: FunFact1,
         strength: "75 +",
         heading: "Enrolled Students"
     },
     {
-        bgImage: './src/assets/funfact1.webp',
+        bgImage: funFact,
         image: FunFact2,
         strength: "324 +",
         heading: "Enrolled Students"
     },
     {
-        bgImage: './src/assets/funfact1.webp',
+        bgImage: funFact,
         image: FunFact3,
         strength: "25 K+",
         heading: "Certified Students"
     },
     {
-        bgImage: './src/assets/funfact1.webp',
+        bgImage: funFact,
         image: FunFact4,
         strength: "30 +",
         heading: "Skilled Instructors"
     }
-]
+];
 
 export const industryData = [
     {
@@ -1254,7 +1362,7 @@ export const industryData = [
         heading: "Supportive Community",
         desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum"
     }
-]
+];
 
 export const partnerData = [
     { image: partner1 },
@@ -1262,34 +1370,37 @@ export const partnerData = [
     { image: partner3 },
     { image: partner4 },
     { image: partner5 },
-]
+];
 
 export const skillLevelData = [
     { text: "All Levels (82)" },
     { text: "Beginner Levels (82)" },
     { text: "Intermediate Levels (82)" },
     { text: "Expert Levels (82)" },
-]
+];
 
-export const languageData = ["Spanish Language", "Arabic Language", "United State (US)", "United Kingdom (UK)"]
-export const categoryData2 = ["Developement (23)", "Art & Design (45)", "Data Science (14)", "Technology (28)", "IT Management (34)"]
+export const languageData = ["Spanish Language", "Arabic Language", "United State (US)", "United Kingdom (UK)"];
+
+export const categoryData2 = ["Developement (23)", "Art & Design (45)", "Data Science (14)", "Technology (28)", "IT Management (34)"];
+
 export const relatedCoursesData = [
     {
         heading: "Basic of Designing",
-        img: "../src/assets/courses32.webp",
+        img: course32,
         price: "$38.00"
     },
     {
         heading: "Basic of Designing",
-        img: "../src/assets/courses33.webp",
+        img: course33,
         price: "$38.00"
     },
     {
         heading: "Basic of Designing",
-        img: "../src/assets/courses34.webp",
+        img: course34,
         price: "$38.00"
     },
-]
+];
+
 export const courseDetailData = [
     {
         icon: UserRectangle,
@@ -1321,63 +1432,63 @@ export const courseDetailData = [
         title: "Language",
         detail: "English"
     },
-]
+];
 
 export const recentBlogData = [
     {
         id: 'how-to-manage-ads-for-clients-the-right-way',
         path: "/blog-detail",
         title: "How to Manage Ads For Clients The Right Way",
-        img: '../src/assets/blog17.webp'
+        img: blog17
     },
     {
         id: '14-facebook-examples-for-ad-creative',
         path: "/blog-detail",
         title: "14 Facebook Examples for Ad Creative",
-        img: '../src/assets/blog18.webp'
+        img: blog18
     },
     {
         id: 'to-carry-out-put-into-the-perform-to-implement',
         path: "/blog-detail",
         title: "To Carry Out Put Into The Perform To Implement",
-        img: '../src/assets/blog19.webp'
+        img: blog19
     }
-]
+];
 
-export const tagsData = ["Business", "Education", "Design", "Students", "Teachers", "Classroom", "Online", "e-Learning", "Book"]
+export const tagsData = ["Business", "Education", "Design", "Students", "Teachers", "Classroom", "Online", "e-Learning", "Book"];
 
 export const instaFeedData = [
-    { image: '../src/assets/blog20.webp' },
-    { image: '../src/assets/blog21.webp' },
-    { image: '../src/assets/blog22.webp' },
-    { image: '../src/assets/blog23.webp' },
-    { image: '../src/assets/blog24.webp' },
-    { image: '../src/assets/blog25.webp' },
-]
+    { image: blog20 },
+    { image: blog21 },
+    { image: blog22 },
+    { image: blog23 },
+    { image: blog24 },
+    { image: blog25 },
+];
 
 export const commentsData = [
     {
         tag: "comment",
-        img: '../src/assets/blog31.webp',
+        img: blog31,
         name: 'Ronald Smalls',
         datePosted: 'Feb 21, 2024 at 11:00am',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form'
     },
     {
         tag: "reply",
-        img: '../src/assets/blog32.webp',
+        img: blog32,
         name: 'Eunice Rosas',
         datePosted: 'Feb 21, 2024 at 11:00am',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form'
     },
     {
         tag: "comment",
-        img: '../src/assets/blog33.webp',
+        img: blog33,
         name: 'Ronald Smalls',
         datePosted: 'Feb 21, 2024 at 11:00am',
         desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form'
     }
-]
+];
 
 export const courseContentData = [
     {
@@ -1518,18 +1629,17 @@ export const courseContentData = [
     },
 ];
 
-
 export const courseReviewData = [
     {
-        img: '../src/assets/courses37.webp',
+        img: courseUser7,
         name: "Daniel Smith",
         datePosted: "Jan 24, 2024",
         desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
     },
     {
-        img: '../src/assets/courses38.webp',
+        img: courseUser8,
         name: "Loara Lissa",
         datePosted: "Jan 24, 2024",
         desc: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
     }
-]
+];

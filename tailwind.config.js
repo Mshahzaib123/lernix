@@ -22,7 +22,9 @@ export default {
       },
       backgroundColor: {
         transparent: 'transparent',
-        primary: '#8a47cb',
+        // primary: '#8a47cb',
+        primary: '#0063f4',
+        primaryDark: '#00317a',
         secondary: '#1cca81',
         whiteShade: '#fbfbfb',
         white: '#ffffff',
@@ -43,13 +45,19 @@ export default {
         darkPink100: '#ff7e84',
         grey100: '#f0f0f0',
         grey200: '#d9d9d9',
-        lightPurple100: '#efe8f6',
+        // lightPurple100: '#efe8f6',
+        lightPurple100: '#599cff30',
         lightGreen100: '#e3f9f6'
       },
       keyframes: {
         zoomInOut: {
           '0%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.5)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        zoomInOut2: {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
           '100%': { transform: 'scale(1)' },
         },
         moveBg: {
@@ -65,6 +73,11 @@ export default {
         moveBounce2: {
           '0%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-20px)' },
+          '100%': { transform: 'translateY(0)' }
+        },
+        moveBounce3: {
+          '0%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-6px)' },
           '100%': { transform: 'translateY(0)' }
         },
         rotateMe: {
@@ -102,9 +115,11 @@ export default {
       },
       animation: {
         zoomInOut: 'zoomInOut 5s linear infinite',
+        zoomInOut2: 'zoomInOut2 5s linear infinite',
         moveBg: 'moveBg 5s linear infinite',
         moveBounce: 'moveBounce 10s linear infinite',
         moveBounce2: 'moveBounce2 1s linear infinite',
+        moveBounce3: 'moveBounce2 5s linear infinite',
         rotateMe: 'rotateMe 10s linear infinite',
         rotateMe2: 'rotateMe 20s linear infinite',
         ripple: 'ripple 4s linear infinite',
@@ -112,7 +127,8 @@ export default {
       },
       colors: {
         transparent: 'transparent',
-        primary: '#8a47cb',
+        // primary: '#8a47cb',
+        primary: '#0063f4',
         secondary: '#1cca81',
         whiteShade: '#fbfbfb',
         whiteShade200: '#cfcfcf',
@@ -134,7 +150,8 @@ export default {
       },
       borderColor: {
         transparent: 'transparent',
-        primary: '#8a47cb',
+        // primary: '#8a47cb',
+        primary: '#0063f4',
         secondary: '#1cca81',
         whiteShade200: '#ececec',
         whiteShade: '#fbfbfb',
@@ -145,7 +162,7 @@ export default {
         bodyColor2: '#878787',
         greyLight: '#f0f0f0',
         greyShade: '#ededed',
-        lightPurple100: '#b78fde'
+        lightPurple100: '#599cff',
       },
       boxShadow: {
         boxShadow: '0px 10px 40px 0px rgba(0, 0, 0, 0.05)',

@@ -7,7 +7,7 @@ import CategoryCard from './categoryCard';
 const CategoriesSec = () => {
     const navigate = useNavigate()
     const handleClick = () => {
-        navigate("/courses-detail")
+        navigate("/courses-list-view")
     }
     return (
         <section className="lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">

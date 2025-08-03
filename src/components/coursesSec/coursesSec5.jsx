@@ -46,23 +46,27 @@ const CoursesSec5 = () => {
                         </div>
                         <div className="bg-white shadow-boxShadow rounded-lg xl:p-8 p-5">
                             <TitleComponent type='h4' className="text-black">Categories</TitleComponent>
-                            <div className="flex flex-col xl:gap-5 gap-4 mt-6">
+                            <ul className="flex flex-col xl:gap-5 gap-4 mt-6">
                                 {categoryData2.map((item, index) => (
-                                    <Link key={index} to="#" className={`flex justify-between items-center rounded xl:pt-4 xl:px-5 xl:pb-5 py-3.5 px-4 ${index === 1 ? "bg-primary" : "bg-grey100 duration-300 hover:bg-primary"} group`}>
-                                        <TitleComponent size='base-medium' className={`${index === 1 ? "text-whiteShade" : "text-bodyColor duration-300 group-hover:text-whiteShade"}`}>{item}</TitleComponent>
-                                        <CaretRight className={`${index === 1 ? "text-whiteShade" : "text-bodyColor duration-300 group-hover:text-whiteShade"}`} size={20} />
-                                    </Link>
+                                    <li key={index}>
+                                        <Link to="/category" className={`flex justify-between items-center rounded xl:pt-4 xl:px-5 xl:pb-5 py-3.5 px-4 ${index === 1 ? "bg-primary" : "bg-grey100 duration-300 hover:bg-primary"} group`}>
+                                            <TitleComponent size='base-medium' className={`${index === 1 ? "text-whiteShade" : "text-bodyColor duration-300 group-hover:text-whiteShade"}`}>{item}</TitleComponent>
+                                            <CaretRight className={`${index === 1 ? "text-whiteShade" : "text-bodyColor duration-300 group-hover:text-whiteShade"}`} size={20} />
+                                        </Link>
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                         </div>
                         <div className="bg-white shadow-boxShadow rounded-lg xl:p-8 p-5">
                             <TitleComponent type='h4' className="text-black">Skill Level</TitleComponent>
                             <ul className="flex flex-col gap-5 mt-6">
                                 {skillLevelData.map((item, index) => (
                                     <li key={index} className="flex items-center gap-4">
-                                        <div className={`flex justify-center items-center lg:w-7 lg:h-7 w-6 h-6 bg-grey100 rounded-sm cursor-pointer ${index === 1 ? "bg-primary" : "bg-grey100 duration-300 hover:bg-primary"} group`}>
-                                            <Check className={`${index === 1 ? "text-whiteShade" : "text-whiteShade invisible opacity-0 duration-300 group-hover:visible group-hover:opacity-100"}`} size={16} />
-                                        </div>
+                                        <label className='relative overflow-hidden group'>
+                                            <input className='peer/check hidden' type="checkbox" name="" id="checkbox1" />
+                                            <div className={`flex justify-center items-center lg:w-7 lg:h-7 w-6 h-6 rounded-sm cursor-pointer ${index === 1 ? "bg-primary" : "bg-grey100 duration-300 group-hover:bg-primary"} peer-checked/check:bg-primary`} />
+                                            <Check className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-whiteShade duration-300 ${index === 1 ? "opacity-100" : "opacity-0 peer-checked/check:opacity-100 group-hover:opacity-100"}`} size={16} />
+                                        </label>
                                         <TitleComponent size='base-medium' className="text-bodyColor">{item.text}</TitleComponent>
                                     </li>
                                 ))}
@@ -73,9 +77,11 @@ const CoursesSec5 = () => {
                             <ul className="flex flex-col gap-5 mt-6">
                                 {languageData.map((item, index) => (
                                     <li key={index} className="flex items-center gap-4">
-                                        <div className={`flex justify-center items-center lg:w-7 lg:h-7 w-6 h-6 bg-grey100 rounded-sm cursor-pointer ${index === 1 ? "bg-primary" : "bg-grey100 duration-300 hover:bg-primary"} group`}>
-                                            <Check className={`${index === 1 ? "text-whiteShade" : "text-whiteShade invisible opacity-0 duration-300 group-hover:visible group-hover:opacity-100"}`} size={16} />
-                                        </div>
+                                        <label className='relative overflow-hidden group'>
+                                            <input className='peer/check hidden' type="checkbox" name="" id="checkbox1" />
+                                            <div className={`flex justify-center items-center lg:w-7 lg:h-7 w-6 h-6 rounded-sm cursor-pointer ${index === 1 ? "bg-primary" : "bg-grey100 duration-300 group-hover:bg-primary"} peer-checked/check:bg-primary`} />
+                                            <Check className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-whiteShade duration-300 ${index === 1 ? "opacity-100" : "opacity-0 peer-checked/check:opacity-100 group-hover:opacity-100"}`} size={16} />
+                                        </label>
                                         <TitleComponent size='base-medium' className="text-bodyColor">{item}</TitleComponent>
                                     </li>
                                 ))}
@@ -90,9 +96,11 @@ const CoursesSec5 = () => {
                                         fillerStar--;
                                         return (
                                             <li key={rowIndex} className="flex items-center gap-4">
-                                                <div className="flex justify-center items-center lg:w-7 lg:h-7 w-6 h-6 bg-white200 rounded-sm cursor-pointer border border-solid border-whiteShade200 duration-300 group hover:bg-primary border-transparent">
-                                                    <Check className="text-whiteShade invisible opacity-0 duration-300 group-hover:visible group-hover:opacity-100" size={16} />
-                                                </div>
+                                                <label className='relative overflow-hidden group'>
+                                                    <input className='peer/check hidden' type="checkbox" name="" id="checkbox1" />
+                                                    <div className={`flex justify-center items-center lg:w-7 lg:h-7 w-6 h-6 border border-solid border-whiteShade200 rounded-sm cursor-pointer ${rowIndex === 1 ? "bg-primary" : "bg-grey100 duration-300 group-hover:bg-primary group-hover:border-primary"} peer-checked/check:bg-primary peer-checked/check:border-primary`} />
+                                                    <Check className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-whiteShade duration-300 ${rowIndex === 1 ? "opacity-100" : "opacity-0 peer-checked/check:opacity-100 group-hover:opacity-100"}`} size={16} />
+                                                </label>
                                                 <div className="flex items-center gap-0.5">
                                                     {
                                                         [...Array(5)].map((_, i) => (

@@ -4,7 +4,7 @@ import clsx from 'clsx'
 const getHeadingClasses = (type) => {
   switch (type) {
     case 'h1':
-      return '2xl:text-7xl lg:text-[55px] md:text-[40px] text-3xl font-lexend leading-normal font-bold'
+      return '2xl:text-7xl lg:text-[50px] md:text-[40px] text-3xl font-lexend leading-normal font-bold'
     case 'h2':
       return '2xl:text-[44px] lg:text-4xl md:text-3xl text-2xl font-lexend leading-normal font-bold'
     case 'h3':
@@ -16,7 +16,7 @@ const getHeadingClasses = (type) => {
     case 'h6':
       return 'lg:text-lg text-base leading-normal font-medium'
     default:
-      return 'xxl:text-[44px] lg:text-4xl md:text-3xl text-2xl leading-normal font-bold'
+      return '2xl:text-[44px] lg:text-4xl md:text-3xl text-2xl leading-normal font-bold'
   }
 }
 

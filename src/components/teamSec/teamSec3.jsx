@@ -5,7 +5,7 @@ import SectionTitle from '../sectionTitle/sectionTitle';
 
 const TeamSec3 = () => {
     return (
-        <section className="team_sec lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
+        <section className="lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
             <div className="container">
                 <SectionTitle
                     subtitle="Team Members"

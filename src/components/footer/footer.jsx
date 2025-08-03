@@ -3,8 +3,8 @@ import { ArrowUp } from '@phosphor-icons/react';
 import { footerNavigationData, socialData, copyrightMenuData } from '../../Data';
 import TitleComponent from '../titleComponent/titleComponent';
 
-import brandLogoLight from '../../assets/brand-logo-light.svg';
-import brandLogoDark from '../../assets/brand-logo-dark.svg';
+import brandLogoLight from '../../assets/brand-logo-light-2.svg';
+import brandLogoDark from '../../assets/brand-logo-dark-2.svg';
 import playStore from '../../assets/google.svg';
 import appStore from '../../assets/app-store.svg';
 import footerShape1 from '../../assets/shape12.svg';
@@ -31,23 +31,27 @@ const Footer = () => {
                             </Link>
                             <TitleComponent size="large-medium" className={`2xl:mt-6 mt-5 mb-4 ${location.pathname === '/homepage2' ? 'text-bodyColor' : 'text-white opacity-70'}`}>Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus.</TitleComponent>
                             <Link to="mailto:support.learnix@email.com" className="text-primary underline xl:text-lg text-base font-medium">support.learnix@email.com</Link>
-                            <div className="flex items-center 2xl:gap-4 gap-5 2xl:mt-7 mt-5">
+                            <ul className="flex items-center 2xl:gap-4 gap-5 2xl:mt-7 mt-5">
                                 {socialData.map((item, index) => (
-                                    <Link key={index} to={item.path} className={`flex justify-center items-center 2xl:w-12 2xl:h-12 w-9 h-9 ${location.pathname === '/homepage2' ? 'bg-black' : 'bg-bodyColor'} rounded-full duration-300 transform hover:-translate-y-2.5 hover:bg-primary`}>
-                                        <item.icon className='text-whiteShade' weight='bold' size={22} />
-                                    </Link>
+                                    <li key={index}>
+                                        <Link to={item.path} className={`relative flex justify-center items-center 2xl:w-12 2xl:h-12 w-9 h-9 ${location.pathname === '/homepage2' ? 'bg-black' : 'bg-bodyColor'} rounded-full translate-y-0 duration-300 group hover:bg-primary`}>
+                                            <item.icon className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-whiteShade' weight='bold' size={22} />
+                                        </Link>
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                         </div>
                         <div className='grid sm:grid-cols-2 gap-6'>
                             {footerNavigationData.map((item, index) => (
                                 <div key={index}>
                                     <TitleComponent type='h4' className={`${location.pathname === '/homepage2' ? 'text-black' : 'text-white'}`}>{item.heading}</TitleComponent>
-                                    <div className="flex 2xl:gap-y-5 gap-y-3 flex-col 2xl:mt-10 mt-5">
+                                    <ul className="flex 2xl:gap-y-5 gap-y-3 flex-col 2xl:mt-10 mt-5">
                                         {item.menu.map((menuItem, subIndex) => (
-                                            <Link key={subIndex} to={menuItem.path} className={`2xl:text-lg xs:text-base font-bold duration-300 hover:text-primary ${location.pathname === '/homepage2' ? 'text-bodyColor' : 'text-white opacity-70'}`}>{menuItem.title}</Link>
+                                            <li key={subIndex}>
+                                                <Link to={menuItem.path} className={`inline-block 2xl:text-lg xs:text-base font-bold duration-300 hover:text-primary ${location.pathname === '/homepage2' ? 'text-bodyColor' : 'text-white opacity-70'}`}>{menuItem.title}</Link>
+                                            </li>
                                         ))}
-                                    </div>
+                                    </ul>
                                 </div>
                             ))}
                         </div>
@@ -74,16 +78,18 @@ const Footer = () => {
             <section className="relative pt-9 py-4 md:py-4 bg-primary">
                 <div className="container">
                     <div className="flex gap-y-4 gap-x-8 justify-between items-center md:flex-row flex-col">
-                        <TitleComponent size='base-medium' className='text-white text-center'>© Copyright 2024 | Learnix Template | All Rights Reserved</TitleComponent>
-                        <div className="flex xl:gap-x-10 lg:gap-x-8 gap-x-5">
+                        <TitleComponent size='small-medium' className='text-white text-center lg:text-base'>© Copyright 2024 | Learnix Template | All Rights Reserved</TitleComponent>
+                        <ul className="flex xl:gap-x-10 lg:gap-x-8 gap-x-5">
                             {copyrightMenuData.map((item, index) => (
-                                <Link key={index} to={item.path} className="relative text-white xl:text-base text-sm font-medium after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-white after:bottom-0 after:left-0 after:duration-500 hover:after:w-full">{item.title}</Link>
+                                <li key={index}>
+                                    <Link to={item.path} className="relative text-white xl:text-base text-sm font-medium after:content-[''] after:absolute after:w-0 after:h-px after:bg-white after:bottom-0 after:left-0 after:duration-500 hover:after:w-full">{item.title}</Link>
+                                </li>
                             ))}
-                        </div>
+                        </ul>
                     </div>
                 </div>
                 <div className="absolute lg:-top-9 -top-8 left-1/2 tranform -translate-x-1/2">
-                    <Link onClick={scrollTop} to="/" className="flex justify-center items-center lg:w-16 lg:h-16 lg:border-4 w-12 h-12 rounded-full bg-primary border-2 border-solid border-white duration-300 hover:bg-black">
+                    <Link onClick={scrollTop} className="flex justify-center items-center lg:w-16 lg:h-16 lg:border-4 w-12 h-12 rounded-full bg-primary border-2 border-solid border-white duration-300 hover:bg-black">
                         <ArrowUp className='text-white' weight='bold' size={22} />
                     </Link>
                 </div>

@@ -68,7 +68,7 @@ const BlogDetailSec = () => {
                                 </ul>
                                 <TitleComponent type='h3' className="mt-6 mb-5 text-black !leading-snug">{blogDetail?.heading ? blogDetail.heading : "Learn at your own pace, with lifetime Access on Mobile & Desktop"}</TitleComponent>
                                 <TitleComponent size='small-medium' className="text-bodyColor md:text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</TitleComponent>
-                                <div className="relative bg-secondary rounded md:p-8 p-5 mt-8 mb-6">
+                                <div className="relative bg-primary rounded md:p-8 p-5 mt-8 mb-6">
                                     <img src={quoteSvg} alt="" />
                                     <TitleComponent size='large-medium' className="mt-5 mb-6 text-whiteShade">“ Education is one of the most powerful aspects of life. Education and learning allow us to make sense of the world around us, the world inside of us, and where we fit within the world.”</TitleComponent>
                                     <TitleComponent type='h4' className="relative pl-16 text-whiteShade after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-12 after:h-1 after:bg-whiteShade !font-medium">Rosalina D. Jackson</TitleComponent>
@@ -84,10 +84,10 @@ const BlogDetailSec = () => {
                                 <TitleComponent type='h4' className="text-black mb-5">Education Is About Academic Excellence And Cultural Diversity Learning Community</TitleComponent>
                                 <TitleComponent size='small-medium' className="text-bodyColor md:text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</TitleComponent>
                                 <ul className="flex flex-col gap-5 mt-8 mb-9">
-                                    <li className="relative pl-5 text-bodyColor md:text-base text-sm font-medium after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-secondary after:rounded-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                    <li className="relative pl-5 text-bodyColor md:text-base text-sm font-medium after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-secondary after:rounded-full">Vestibulum et orci bibendum, fringilla risus in, euismodorci.</li>
-                                    <li className="relative pl-5 text-bodyColor md:text-base text-sm font-medium after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-secondary after:rounded-full">Donec mattis lorem sed dapibus vestibulum.</li>
-                                    <li className="relative pl-5 text-bodyColor md:text-base text-sm font-medium after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-secondary after:rounded-full">Donec mattis lorem sed dapibus vestibulum.</li>
+                                    <li className="relative pl-5 text-bodyColor md:text-base text-sm font-medium after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-primary after:rounded-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                    <li className="relative pl-5 text-bodyColor md:text-base text-sm font-medium after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-primary after:rounded-full">Vestibulum et orci bibendum, fringilla risus in, euismodorci.</li>
+                                    <li className="relative pl-5 text-bodyColor md:text-base text-sm font-medium after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-primary after:rounded-full">Donec mattis lorem sed dapibus vestibulum.</li>
+                                    <li className="relative pl-5 text-bodyColor md:text-base text-sm font-medium after:content-[''] after:absolute after:top-1/2 after:left-0 after:-translate-y-1/2 after:w-2 after:h-2 after:bg-primary after:rounded-full">Donec mattis lorem sed dapibus vestibulum.</li>
                                 </ul>
                                 <div className="flex justify-between items-start flex-wrap gap-6">
                                     <div className="flex items-center gap-4">
@@ -121,8 +121,8 @@ const BlogDetailSec = () => {
                                     </div>
                                     <div className="grid grid-cols-[1fr_auto] items-center gap-4 p-5 rounded-lg bg-whiteShade">
                                         <div className="text-right">
-                                            <TitleComponent size='small-medium' className="text-primary xl:text-base">Prev Post</TitleComponent>
-                                            <TitleComponent size='small-semibold' className="text-black mt-1.5 xl:text-base">How Technology Can Help You Stay Healthy</TitleComponent>
+                                            <TitleComponent size='small-medium' className="text-primary xl:text-base">Next Post</TitleComponent>
+                                            <TitleComponent size='small-semibold' className="text-black mt-1.5 xl:text-lg">How Technology Can Help You Stay Healthy</TitleComponent>
                                         </div>
                                         <div className="md:order-1 flex justify-end">
                                             <img className="w-20 h-20 rounded object-cover" src={blogImg30} alt="" />
@@ -145,16 +145,16 @@ const BlogDetailSec = () => {
                                             <TitleComponent size='small-medium' className="text-bodyColor max-w-[578px] md:text-base">{item.desc}</TitleComponent>
                                         </div>
                                         <div className="absolute top-0 right-0">
-                                            <Link to="#" className="flex items-center gap-2 py-2 px-3.5 rounded bg-lightGreen100 duration-300 group hover:bg-secondary">
-                                                <ArrowBendDoubleUpLeft className='text-secondary duration-300 group-hover:text-whiteShade' weight='bold' size={16} />
-                                                <TitleComponent size='base-medium' className="text-secondary duration-300 group-hover:text-whiteShade">Reply</TitleComponent>
+                                            <Link to="#" className="flex items-center gap-2 py-2 px-3.5 rounded bg-primary/10 duration-300 group hover:bg-primary">
+                                                <ArrowBendDoubleUpLeft className='text-primary duration-300 group-hover:text-whiteShade' weight='bold' size={16} />
+                                                <TitleComponent size='base-medium' className="text-primary duration-300 group-hover:text-whiteShade">Reply</TitleComponent>
                                             </Link>
                                         </div>
                                     </div>
                                 </div>
                             ))}
                             <div>
-                        </div>
+                            </div>
                         </div>
                         <div>
                             <h3 className="text-black 2xl:text-4xl xl:text-3xl text-2xl leading-normal font-bold">Leave A Reply</h3>
@@ -171,7 +171,7 @@ const BlogDetailSec = () => {
                                 <div className="w-full">
                                     <FormInput name={"url"} type={"url"} placeholder={"Website Address*"} />
                                 </div>
-                                <div className="textarea_otr">
+                                <div>
                                     <textarea className="w-full h-[200px] bg-grey100 lg:p-5 p-3 text-bodyColor resize-none lg:text-base text-sm focus:outline-none" placeholder="Your Message*"></textarea>
                                 </div>
                                 <div className='flex'>

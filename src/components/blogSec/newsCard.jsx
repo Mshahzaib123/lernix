@@ -6,7 +6,7 @@ const NewsCard = ({ data }) => {
     return (
         <div className="bg-whiteShade rounded-xl shadow-boxShadow">
             <Link to={`/blog-detail/${data.id}`} className="block overflow-hidden rounded-lg xl:mx-8 xl:mt-8 xl:mb-6 m-5 group/image">
-                <img className="w-full object-cover transform duration-500 group-hover/image:scale-110" src={data.blogImg} alt="" />
+                <img className="w-full object-cover transform duration-500 group-hover/image:scale-105" src={data.blogImg} alt="" />
             </Link>
             <div>
                 <Link to={`/blog-detail/${data.id}`} className="xl:mx-8 mx-6 text-black 2xl:text-4xl xl:text-3xl md:text-2xl text-xl leading-normal font-bold duration-300 hover:text-primary">{data.heading}</Link>

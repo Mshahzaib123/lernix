@@ -24,7 +24,7 @@ const CoursesSec2 = () => {
         navigate("/courses-list-view")
     }
     return (
-        <section className="relative bg-lightPink200 lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
+        <section className="relative z-10 bg-lightPink200 lg:pt-32 md:pt-[90px] pt-[70px] lg:pb-28 md:pb-[75px] pb-12">
             <div className="container">
                 <div className="flex gap-y-6 justify-between lg:items-end lg:flex-row flex-col md:mb-12 mb-8">
                     <SectionTitle
@@ -38,7 +38,7 @@ const CoursesSec2 = () => {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={`text-bodyColor border-none bg-transparent lg:text-lg text-base font-bold duration-300 hover:text-primary ${activeTab === tab ? 'text-primary' : ''}`}>
+                                className={`border-none bg-transparent text-bodyColor lg:text-lg text-base font-bold duration-300 hover:text-primary ${activeTab === tab ? 'text-primary' : ''}`}>
                                 {tab}
                             </button>
                         ))}
@@ -54,11 +54,11 @@ const CoursesSec2 = () => {
                 </div>
             </div>
 
-            <img className="absolute 3xl:top-[87px] 3xl:left-24 top-9 left-14 3xl:max-w-full max-w-12 lg:block hidden" src={shape15} alt="" />
-            <div className="absolute 3xl:top-16 3xl:right-48 top-9 right-44 w-2.5 h-2.5 bg-gradient rounded-full 3xl:animate-moveBounce lg:block hidden" />
-            <div className="absolute 3xl:top-72 3xl:right-24 top-[105px] right-10 w-2 h-2 bg-primary rounded-full 3xl:animate-moveBg lg:block hidden" />
-            <div className="absolute 3xl:left-14 3xl:bottom-[300px] left-7 bottom-32 w-2.5 h-2.5 bg-gradient rounded-full 3xl:animate-moveBg lg:block hidden" />
-            <div className="absolute 3xl:left-[151px] 3xl:bottom-56 left-[150px] bottom-10 w-2 h-2 bg-primary rounded-full 3xl:animate-moveBounce lg:block hidden" />
+            <img className="absolute -z-[1] 3xl:top-[87px] 3xl:left-20 top-9 left-14 3xl:max-w-full max-w-12 lg:block hidden" src={shape15} alt="" />
+            <div className="absolute -z-[1] 3xl:top-16 3xl:right-48 top-9 right-44 w-2.5 h-2.5 bg-gradient rounded-full 3xl:animate-moveBounce lg:block hidden" />
+            <div className="absolute -z-[1] 3xl:top-72 3xl:right-24 top-[105px] right-10 w-2 h-2 bg-primary rounded-full 3xl:animate-moveBg lg:block hidden" />
+            <div className="absolute -z-[1] 3xl:left-14 3xl:bottom-[300px] left-7 bottom-32 w-2.5 h-2.5 bg-gradient rounded-full 3xl:animate-moveBg lg:block hidden" />
+            <div className="absolute -z-[1] 3xl:left-[151px] 3xl:bottom-56 left-[150px] bottom-10 w-2 h-2 bg-primary rounded-full 3xl:animate-moveBounce lg:block hidden" />
         </section>
     )
 }

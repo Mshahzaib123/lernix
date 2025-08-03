@@ -21,7 +21,7 @@ import CourseCard2 from '../coursesSec/courseCard2';
 // import team14 from '../../assets/team14.webp';
 // import team15 from '../../assets/team15.webp';
 import team16 from '../../assets/team16.webp';
-import rate1Svg from '../../assets/rate1.svg';
+import rate1Svg from '../../assets/rate1-2.svg';
 import rate2Svg from '../../assets/rate2.svg';
 import rate3Svg from '../../assets/rate3.svg';
 import shape26 from '../../assets/shape26.svg';
@@ -39,12 +39,12 @@ const TeamDetailSec = () => {
             <div className="container">
                 <div className="relative z-[2] flex gap-6 items-start lg:flex-row flex-col">
                     <div className="lg:w-1/3 bg-whiteShade overflow-hidden rounded-lg shadow-boxShadow2">
-                        <div className="flex">
-                            <img className='scale-105' src={teamDetail?.img ? teamDetail.img : team16} alt="" />
+                        <div className="flex overflow-hidden w-full">
+                            <img className='w-full max-h-[650px] scale-105 object-top object-cover' src={teamDetail?.img ? teamDetail.img : team16} alt="" />
                         </div>
                         <div className="xl:p-8 p-5">
                             <TitleComponent type='h4' className="text-black">{teamDetail?.name ? teamDetail.name : "Julia B. Corbin"}</TitleComponent>
-                            <TitleComponent size='base-medium' className="xl:mt-5 xl:mb-10 my-5">Professor & Chair of Department of Computer Science at University the where been since 1994. vulput for the pellentesque commodo.</TitleComponent>
+                            <TitleComponent size='base-medium' className="xl:mt-5 xl:mb-10 my-5 text-bodyColor">Professor & Chair of Department of Computer Science at University the where been since 1994. vulput for the pellentesque commodo.</TitleComponent>
                             <ul className="flex flex-col xl:gap-8 gap-5">
                                 <li className="grid grid-cols-[auto_1fr] items-center gap-4">
                                     <div className="flex justify-center items-center w-8 h-8 bg-secondary rounded">
@@ -67,13 +67,15 @@ const TeamDetailSec = () => {
                             </ul>
                             <div className="mt-8">
                                 <TitleComponent type='h5' className="text-black">Follow Me On:</TitleComponent>
-                                <div className="flex items-center gap-2 mt-5">
+                                <ul className="flex items-center gap-2 mt-5">
                                     {socialData2.map((item, index) => (
-                                        <Link key={index} to={item.path}>
-                                            <img className="lg:w-10 lg:h-10 sm:w-12 sm:h-12 w-10 h-10 rounded object-cover" src={item.icon} alt="" />
-                                        </Link>
+                                        <li key={index}>
+                                            <Link to={item.path}>
+                                                <img className="lg:w-10 lg:h-10 sm:w-12 sm:h-12 w-10 h-10 rounded object-cover duration-300 hover:-translate-y-1" src={item.icon} alt="" />
+                                            </Link>
+                                        </li>
                                     ))}
-                                </div>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -83,29 +85,29 @@ const TeamDetailSec = () => {
                         <TitleComponent size='base-medium' className="text-bodyColor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate pellentesque commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</TitleComponent>
                         <TitleComponent size='base-medium' className="text-bodyColor mb-4">Donec faucibus imperdiet libero, at lacinia metus. Quisque finibus ante non arcu aliquet, nec vestibulum dolor condimentum. Nulla facilisi. Vestibulum porttitor vestibulum est eu dignissim. Quisque blandit elementum convallis. Ut et mi hendrerit, posuere purus ac, facilisis nibh.</TitleComponent>
                         <div className="flex 2xl:gap-x-16 gap-x-6 gap-y-14 3xl:justify-between justify-center lg:flex-nowrap flex-wrap sm:flex-row flex-col mt-[76px] mb-14">
-                            <div className="md:w-1/3 relative duration-300 group hover:-translate-y-2.5">
+                            <div className="md:w-1/3 relative duration-500 group">
                                 <div className="absolute left-1/2 -translate-x-1/2 -top-10">
                                     <img className="xl:w-20 xl:h-20 w-16 h-16 object-cover" src={rate1Svg} alt="" />
                                 </div>
-                                <div className="bg-whiteShade shadow-boxShadow rounded-lg xl:pt-14 xl:px-6 xl:pb-6 pt-11 px-5 pb-5 text-center">
+                                <div className="bg-whiteShade shadow-boxShadow rounded-lg xl:pt-14 xl:px-6 xl:pb-6 pt-11 px-5 pb-5 text-center duration-500 group-hover:shadow-boxShadow2">
                                     <h3 className="text-black 2xl:text-4xl xl:text-3xl text-2xl font-bold">45+</h3>
                                     <TitleComponent size='base-semibold' className="text-lightGrey xl:mt-4 mt-3 xl:text-lg">Enrolled Students</TitleComponent>
                                 </div>
                             </div>
-                            <div className="md:w-1/3 relative duration-300 group hover:-translate-y-2.5">
+                            <div className="md:w-1/3 relative duration-500 group">
                                 <div className="absolute left-1/2 -translate-x-1/2 -top-10">
                                     <img className="xl:w-20 xl:h-20 w-16 h-16 object-cover" src={rate2Svg} alt="" />
                                 </div>
-                                <div className="bg-whiteShade shadow-boxShadow rounded-lg xl:pt-14 xl:px-6 xl:pb-6 pt-11 px-5 pb-5 text-center">
+                                <div className="bg-whiteShade shadow-boxShadow rounded-lg xl:pt-14 xl:px-6 xl:pb-6 pt-11 px-5 pb-5 text-center duration-500 group-hover:shadow-boxShadow2">
                                     <h3 className="text-black 2xl:text-4xl xl:text-3xl text-2xl font-bold">24+</h3>
                                     <TitleComponent size='base-semibold' className="text-lightGrey xl:mt-4 mt-3 xl:text-lg">Academic Programs</TitleComponent>
                                 </div>
                             </div>
-                            <div className="md:w-1/3 sm:w-1/2 relative duration-300 group hover:-translate-y-2.5">
+                            <div className="md:w-1/3 sm:w-1/2 relative duration-500 group">
                                 <div className="absolute left-1/2 -translate-x-1/2 -top-10">
                                     <img className="xl:w-20 xl:h-20 w-16 h-16 object-cover" src={rate3Svg} alt="" />
                                 </div>
-                                <div className="bg-whiteShade shadow-boxShadow rounded-lg xl:pt-14 xl:px-6 xl:pb-6 pt-11 px-5 pb-5 text-center">
+                                <div className="bg-whiteShade shadow-boxShadow rounded-lg xl:pt-14 xl:px-6 xl:pb-6 pt-11 px-5 pb-5 text-center duration-500 group-hover:shadow-boxShadow2">
                                     <h3 className="text-black 2xl:text-4xl xl:text-3xl text-2xl font-bold">8+</h3>
                                     <TitleComponent size='base-semibold' className="text-lightGrey xl:mt-4 mt-3 xl:text-lg">Award Winning</TitleComponent>
                                 </div>
@@ -129,7 +131,7 @@ const TeamDetailSec = () => {
                     </div>
                 </div>
             </div>
-            <img className="absolute 3xl:top-[444px] 3xl:left-44 top-20 left-2.5 -z-[1] lg:block hidden" src={shape26} alt="" />
+            <img className="absolute -z-[1] 3xl:top-[444px] 3xl:left-44 top-20 left-2.5 lg:block hidden" src={shape26} alt="" />
             <img className="absolute -z-[1] 3xl:top-40 3xl:right-[188px] top-24 right-5 lg:block hidden" src={shape27} alt="" />
             <img className="absolute -z-[1] top-[925px] 3xl:left-48 left-14 lg:block hidden" src={shape28} alt="" />
             <img className="absolute -z-[1] left-52 bottom-[274px] lg:block hidden" src={shape29} alt="" />

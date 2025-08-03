@@ -25,7 +25,7 @@ const ThemeInput = ({
             />
             {
                 buttonText && (
-                    <div className="sm:absolute relative transform sm:top-1/2 sm:right-3 sm:-translate-y-1/2 sm:mt-0 top-0 right-0 translate-y-0 mt-4">
+                    <div className="sm:absolute relative sm:top-1/2 sm:right-3 sm:-translate-y-1/2 sm:mt-0 top-0 right-0 translate-y-0 mt-4">
                         <ThemeButton
                             variant="solid"
                             theme="primary"

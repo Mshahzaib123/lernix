@@ -31,7 +31,7 @@ const BlogSidebar = () => {
                 <TitleComponent type='h4' className="text-black">Popular Tags</TitleComponent>
                 <div className="flex items-center xl:gap-x-2.5 xl:gap-y-4 gap-x-1.5 gap-y-2.5 flex-wrap mt-6">
                     {tagsData.map((item, index) => (
-                        <Link key={index} to="#" className={`bg-grey100 py-1 px-3 lg:text-lg sm:text-base text-sm font-medium ${index === 1 ? "bg-primary text-white" : "text-bodyColor duration-300 hover:bg-primary hover:text-white"}`}>{item}</Link>
+                        <Link key={index} to="#" className={`bg-grey100 py-1 px-3 xl:text-lg sm:text-base text-sm font-medium ${index === 1 ? "bg-primary text-white" : "text-bodyColor duration-300 hover:bg-primary hover:text-white"}`}>{item}</Link>
                     ))}
                 </div>
             </div>
@@ -39,7 +39,7 @@ const BlogSidebar = () => {
                 <TitleComponent type='h4' className="text-black">Instagram Feed</TitleComponent>
                 <div className="grid grid-cols-[repeat(auto-fit,_minmax(80px,_1fr))] xl:gap-x-4 xl:gap-y-5 gap-x-2.5 gap-y-3 mt-6">
                     {instaFeedData.map((item, index) => (
-                        <Link key={index} to="#" className="relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black before:invisible before:opacity-0 before:rounded before:duration-300 duration-300 group hover:-translate-y-2.5 hover:before:visible hover:before:opacity-30">
+                        <Link key={index} to="#" className="relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black before:invisible before:opacity-0 before:rounded before:duration-300 duration-300 group hover:before:visible hover:before:opacity-30">
                             <img className="w-full h-[90px] rounded object-cover" src={item.image} alt="" />
                             <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 invisible opacity-0 duration-300 group-hover:visible group-hover:opacity-90">
                                 <img className="w-7 h-7 object-contain" src={instagramIcon} alt="" />

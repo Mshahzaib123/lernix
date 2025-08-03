@@ -2,7 +2,7 @@ import TitleComponent from '../titleComponent/titleComponent';
 
 const TestimonialMCard = ({ data }) => {
     return (
-        <div className="md:col-span-2 grid sm:grid-cols-[auto_1fr] items-center lg:gap-11 gap-4 lg:p-7 p-4 bg-whiteShade rounded-lg shadow-boxShadow">
+        <div className="grid sm:grid-cols-[auto_1fr] md:col-span-2 items-center lg:gap-11 gap-4 lg:p-7 p-4 bg-whiteShade rounded-lg shadow-boxShadow">
             <img className="lg:w-[270px] lg:h-[270px] w-36 h-36 object-center object-cover rounded-full " src={data.profileImg} alt="" />
             <div>
                 <img className="lg:max-w-16 max-w-10" src={data.quoteSvg} alt="" />

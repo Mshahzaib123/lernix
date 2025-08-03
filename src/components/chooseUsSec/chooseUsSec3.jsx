@@ -35,7 +35,7 @@ const ChooseUsSec3 = () => {
                         <div className="relative lg:w-1/3 md:w-1/2 flex justify-center">
                             <div className="xl:ml-[75px] lg:-mr-48 2xl:-mt-28 xl:-mt-24 mx-0 mt-0">
                                 <img className="img" src={chooseUse3Img} alt="" />
-                                <div className="inline-block absolute left-5 md:bottom-44 bottom-[70px] z-[2] rounded-lg bg-whiteShade shadow-boxShadow3 p-3.5 duration-300 hover:-translate-y-2.5">
+                                <div className="inline-block absolute left-5 md:bottom-44 bottom-[70px] z-[2] rounded-lg bg-whiteShade shadow-boxShadow3 p-3.5 animate-zoomInOut2">
                                     <ul className="flex items-center gap-x-4">
                                         <li className="flex items-center gap-1">
                                             <img src={udemyLogo} alt="Udemy LOGO" />
