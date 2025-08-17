@@ -7,6 +7,7 @@ import Header from './components/header/header';
 import HomePage from './pages/home-page';
 import Footer from './components/footer/footer';
 import Footer2 from './components/footer/footer2';
+import HomePage2 from './pages/home-page2';
 
 function App() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function App() {
           <Header />
           <Routes>
             <Route index element={<HomePage />} />
+            <Route path='/homepage2' element={<HomePage2 />} />
           </Routes>
           {footer}
         </>
