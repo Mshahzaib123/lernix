@@ -9,6 +9,9 @@ import Footer from './components/footer/footer';
 import Footer2 from './components/footer/footer2';
 import HomePage2 from './pages/home-page2';
 import HomePage3 from './pages/home-page3';
+import AboutPage from './pages/about-page';
+import PrivacyPolicy from './pages/privacy-policy';
+import TermsConditions from './pages/terms-conditions';
 
 function App() {
   const location = useLocation();
@@ -39,6 +42,9 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path='/homepage2' element={<HomePage2 />} />
             <Route path='/homepage3' element={<HomePage3 />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='/terms-conditions' element={<TermsConditions />} />
           </Routes>
           {footer}
         </>
