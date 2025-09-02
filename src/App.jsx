@@ -12,6 +12,8 @@ import HomePage3 from './pages/home-page3';
 import AboutPage from './pages/about-page';
 import PrivacyPolicy from './pages/privacy-policy';
 import TermsConditions from './pages/terms-conditions';
+import TeamPage from './pages/team-page';
+import TeamDetails from './pages/team-details';
 
 function App() {
   const location = useLocation();
@@ -45,6 +47,9 @@ function App() {
             <Route path='/about' element={<AboutPage />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
             <Route path='/terms-conditions' element={<TermsConditions />} />
+            <Route path='/team' element={<TeamPage />} />
+            <Route path='/team-detail/' element={<TeamDetails />} />
+            <Route path='/team-detail/:id' element={<TeamDetails />} />
           </Routes>
           {footer}
         </>
