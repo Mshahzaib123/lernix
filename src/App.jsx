@@ -14,6 +14,8 @@ import PrivacyPolicy from './pages/privacy-policy';
 import TermsConditions from './pages/terms-conditions';
 import TeamPage from './pages/team-page';
 import TeamDetails from './pages/team-details';
+import CoursesList from './pages/courses-list';
+import CourseDetails from './pages/course-details';
 
 function App() {
   const location = useLocation();
@@ -50,6 +52,9 @@ function App() {
             <Route path='/team' element={<TeamPage />} />
             <Route path='/team-detail/' element={<TeamDetails />} />
             <Route path='/team-detail/:id' element={<TeamDetails />} />
+            <Route path='/courses-list-view' element={<CoursesList />} />
+            <Route path='/courses-detail/' element={<CourseDetails />} />
+            <Route path='/courses-detail/:id' element={<CourseDetails />} />
           </Routes>
           {footer}
         </>
