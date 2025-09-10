@@ -18,6 +18,7 @@ import CoursesList from './pages/courses-list';
 import CourseDetails from './pages/course-details';
 import CoursesGrid from './pages/courses-grid';
 import CoursesWithSidebar from './pages/courses-with-sidebar';
+import BlogStandard from './pages/blog-standard';
 
 function App() {
   const location = useLocation();
@@ -59,6 +60,7 @@ function App() {
             <Route path='/courses-detail/:id' element={<CourseDetails />} />
             <Route path='/courses-grid-view' element={<CoursesGrid />} />
             <Route path='/courses-with-sidebar' element={<CoursesWithSidebar />} />
+            <Route path="/blog-standard" element={<BlogStandard />} />
           </Routes>
           {footer}
         </>
