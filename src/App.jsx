@@ -21,6 +21,7 @@ import CoursesWithSidebar from './pages/courses-with-sidebar';
 import BlogStandard from './pages/blog-standard';
 import BlogDetail from './pages/blog-detail';
 import BlogWithSidebar from './pages/blog-with-sidebar';
+import BlogWithoutSidebar from './pages/blog-without-sidebar';
 
 function App() {
   const location = useLocation();
@@ -66,6 +67,7 @@ function App() {
             <Route path="/blog-detail" element={<BlogDetail />} />
             <Route path="/blog-detail/:id" element={<BlogDetail />} />
             <Route path="/blog-with-sidebar" element={<BlogWithSidebar />} />
+            <Route path="/blog-without-sidebar" element={<BlogWithoutSidebar />} />
           </Routes>
           {footer}
         </>
